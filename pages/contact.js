@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+import ContactForm from '../components/ContactForm';
+
 import {
   LeftSection,
   Bio,
@@ -34,7 +35,7 @@ const Contact = () => {
         </LeftSection>
 
             <RightSection>
-              email form
+              <ContactForm />
             </RightSection>
       </div>
     </>

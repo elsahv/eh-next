@@ -5,7 +5,8 @@ LeftSection,
 RightSection,
 Title,
 Wrapper,
-Grid
+Grid,
+SkillsTitle
 // Icon
 }
 from "../components/styles/About.styled";
@@ -25,7 +26,7 @@ export default function About({posts}) {
        {posts &&
         posts.map((post, index) => (   
           <span key={index}>
-            <div>{post.name}</div>
+            <SkillsTitle>{post.name}</SkillsTitle>
                 <img
                  className="img"
                  src={urlFor(post.icon)}
