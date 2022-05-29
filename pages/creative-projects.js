@@ -1,11 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-
+import { FiArrowDown } from "react-icons/fi";
 import {
   Title,
   ProjectLink,
   LeftSide,
-  RightSide
+  RightSide,
+  CTA,
+  ArrowStyles
 } from '../components/styles/CreativeProjects.styled'
 
 
@@ -21,21 +23,21 @@ const Projects = () => {
      <LeftSide>
       <Title>Writing Projects</Title>
 
-<ProjectLink>
-<Link href="/"> 
-On Finding Creativity- Blog 
-  </Link>
-  </ProjectLink>
+          <ProjectLink>
+          <Link href="/"> 
+          On Finding Creativity- Blog 
+            </Link>
+            </ProjectLink>
 
- <ProjectLink>
-<Link href="/"> 
- Case Studies/ Growth
-  </Link>
-       </ProjectLink>
-     </LeftSide>
+          <ProjectLink>
+          <Link href="/"> 
+          Case Studies/ Growth
+            </Link>
+                </ProjectLink>
+              </LeftSide>
+
+
      <RightSide>
-   
-
        <Title>Design/ Development Resources</Title>
       <ProjectLink>
         <Link href="/study-guide"> 
@@ -47,6 +49,13 @@ On Finding Creativity- Blog
          Misc Projects
        </Link>
        </ProjectLink>
+       <CTA>
+          I update my projects weekly... Subscribe for post updates!
+          <ArrowStyles>
+          <FiArrowDown />
+          </ArrowStyles>
+          </CTA>
+
      </RightSide>
    </div>
     </>

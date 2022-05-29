@@ -44,7 +44,17 @@ border: none;
  export const RightSide = styled.div`
  
  `
+ export const CTA = styled.div`
+ width: 525px;
+ margin-left: 205px;
+ margin-top: 320px;
+ `
 
+ export const ArrowStyles = styled.div`
+ font-size: 30px;
+ margin-top: 5px;
+ `
+ 
 
 
 //END STYLES

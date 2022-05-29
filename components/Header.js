@@ -13,14 +13,12 @@ const Header = () => {
  <Link href="/">
    Elsa Hovey- Development/ Design
    </Link>
-   </Logo> 
+   </Logo>  
    <NavLinks>
-
-       <Link href="/about">About</Link>
+       <Link href="/skills">Skills</Link>
        <Link href="/creative-projects">Creative Projects</Link>
        <Link href="/contact">Contact</Link>
        <Link href="/featured-websites">Featured Websites</Link>
- 
      </NavLinks>
      </NavSection>
   )

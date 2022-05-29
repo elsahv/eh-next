@@ -1,4 +1,4 @@
- 
+import SubscribeForm from '../components/SubscribeForm' 
 import {
   FooterSection,
   SmIcons,
@@ -7,7 +7,7 @@ import {
 import { 
   FaGithub,
   FaLinkedin,
-  FaRegNewspaper
+  // FaRegNewspaper
  } from 'react-icons/fa';
 
 
@@ -25,11 +25,13 @@ const Footer = () => {
             <a className="sm-icon" href="http://linkedin.com/in/elsa-hovey"> 
             <FaLinkedin />
             </a>
-            <a className="sm-icon" href="http://linkedin.com/in/elsa-hovey"> 
-            <FaRegNewspaper / >
-            </a>
-    
+            {/* <a className="sm-icon" href="http://linkedin.com/in/elsa-hovey"> 
+            <FaRegNewspaper />
+            </a> */}
+
           </SmIcons>
+          <SubscribeForm />
+
         </FooterSection>
   )
 }

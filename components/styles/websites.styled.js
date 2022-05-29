@@ -7,6 +7,7 @@ padding: 20px;
 `
 export const Description = styled.span`
  padding: 25px;
+ font-size: 13px;
 `
 
 
@@ -52,4 +53,5 @@ transition: all 0.3s ease;
 `
 
 export const Tags = styled.h4`
+font-size: 12px;
 `

@@ -31,7 +31,6 @@ padding: 25px 40px 0 0;
 font-weight: 900;
 a {
 text-decoration: none;
-
     color: black;
 }
 
@@ -50,6 +49,7 @@ text-decoration: none;
 
 
 export const NavLinks = styled.div`
+
     margin: 23px 10px;
     height: 50px;
     width: 500px;
@@ -63,11 +63,12 @@ export const NavLinks = styled.div`
         color:  #000;
     text-decoration: none;
     }
-
      a:hover {
         color:  #007ba5;
         transition: 1s;
      }
+
+
      @media only screen and (max-width: 968px) {
            display: flex;
            margin: 10px;
