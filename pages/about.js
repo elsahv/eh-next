@@ -1,39 +1,68 @@
-import React from 'react'
- 
+import { sanityClient, urlFor } from "../client"
+
 import {
 LeftSection,
 RightSection,
 Title,
+Wrapper,
+Grid
+// Icon
 }
-from "../components/styles/Contact.styled";
+from "../components/styles/About.styled";
 
 
 
 
 
-export default function About() {
+export default function About({posts}) {
   return (
     <>
-          <div className="main-grid"
-          >  
-
-      {/* //*********LEFT SIDE**************/}
+          <div className="main-grid">  
         <LeftSection>
         <Title>Tools/ Programs Used</Title>
+        <Wrapper>
+        <Grid>
+       {posts &&
+        posts.map((post, index) => (   
+          <span key={index}>
+            <div>{post.name}</div>
+                <img
+                 className="img"
+                 src={urlFor(post.icon)}
+             
+                 />
+          </span>
+          ))}
+              </Grid>
+          </Wrapper>
         </LeftSection>
-       {/* //********************************/}
 
 
-        {/* //*********RIGHT SIDE**************/}
               <RightSection>
               <Title>What I do</Title>
-        
               </RightSection>
-            {/* //********************************/}
           </div>
-
- 
-    
     </>
   );
 }
+
+
+export const getServerSideProps = async () => {
+  const query = '*[ _type == "skills"] | order(_createdAt desc)[0..9]'
+  const posts = await sanityClient.fetch(query)
+
+  if (!posts.length) {
+    return {
+      props: {
+        posts: [],
+      },
+    }
+  } else {
+    return {
+      props: {
+        posts,
+      },
+    }
+  }
+}
+ 

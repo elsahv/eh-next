@@ -45,6 +45,10 @@ transition: all 0.3s ease;
 &:hover{
     transform: rotate(3deg);
    }
+   a {
+       color: #000;
+       text-decoration: none;
+   }
 `
 
 export const Tags = styled.h4`

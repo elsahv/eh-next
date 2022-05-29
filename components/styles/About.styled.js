@@ -2,6 +2,20 @@
 import styled from "styled-components";
 
 
+export const Wrapper = styled.div`
+ display: flex;
+ justify-content: center;
+
+@media only screen and (max-width: 968px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+`;
+
+
 
 
 export const LeftSection = styled.div`
@@ -50,3 +64,21 @@ color: aquamarine;
 `
 
  
+
+export const Grid = styled.div`
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 1em;
+.img {
+    background: teal;
+    border-radius: 25px;
+    width: 85px;
+    height: 85px;
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 768px) {
+ 
+
+}   
+`

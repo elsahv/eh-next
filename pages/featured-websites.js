@@ -1,9 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import Link from "next/link"
-
 import { sanityClient, urlFor } from "../client"
-
 import {
 Title, 
 Wrapper,
@@ -34,6 +31,7 @@ export default function Misc({posts}) {
           <span key={index}>
              
             <GridSquare>
+            <a href={post.projectLink} target="_blank" rel="noreferrer">
           <PostTitles>{post.title}</PostTitles>
             <Description>{post.description}</Description>
           <img 
@@ -42,7 +40,9 @@ export default function Misc({posts}) {
                className="image"
               
                />
-            <Tags>{post.tags}</Tags>
+            <Tags>-{post.tags}</Tags>
+            </a>
+
           </GridSquare>
           </span>
           ))}

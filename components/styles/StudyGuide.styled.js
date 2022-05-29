@@ -17,6 +17,7 @@ grid-gap: 1em;
 cursor: pointer;
 .image {
     border: solid 2px black;
+    border-radius: 45px;
 }
 `
 
