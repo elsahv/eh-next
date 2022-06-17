@@ -69,6 +69,7 @@ color: aquamarine;
 export const Grid = styled.div`
 display: grid;
 grid-template-columns: repeat(4, 1fr);
+margin-top: 45px;
 .img {
     background: teal;
     border-radius: 25px;
@@ -91,3 +92,21 @@ align-items: center;
 
 }   
 `
+
+ 
+export const Skills = styled.div`
+margin: 15px;
+h3 {
+    font-size: 25px;
+    text-shadow: 1px 1px 1px teal;
+}
+ul {
+    margin: 55px;
+    font-size: 18px;
+}
+li {
+    margin: 10px 15px;
+}
+`
+
+ 

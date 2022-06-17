@@ -1,6 +1,6 @@
 export default {
-    name: 'studyGuide',
-    title: 'Study Guide',
+    name: 'post',
+    title: 'Post',
     type: 'document',
     fields: [
       {
@@ -28,14 +28,10 @@ export default {
         type: 'blockContent',
       },
       {
-        name: 'projectLink',
-        title: 'Project Link',
-        type: 'string',
-      },
-      {
-        name: 'codeLink',
-        title: 'Code Link',
-        type: 'string',
+        name: 'categories',
+        title: 'Categories',
+        type: 'array',
+        of: [{type: 'reference', to: {type: 'category'}}]
       },
       {
         name: 'imgUrl',

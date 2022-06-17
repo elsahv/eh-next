@@ -9,7 +9,7 @@ import {
   } from '../../components/styles/Post.styled'
 
 
-const Post = ({
+const Category = ({
   title,
   body
 }) => {
@@ -28,13 +28,13 @@ const Post = ({
 export const getServerSideProps = async (pageContext) => {
   const pageSlug = pageContext.query.slug
 
-  const query = `*[_type in "post" && slug.current == $pageSlug][0]{
+  const query = `*[_type in "category"]{
     title,
-    body
+    body  
   }`
 
-  const post = await sanityClient.fetch(query, { pageSlug })
-  if (!post) {
+  const category = await sanityClient.fetch(query, { pageSlug })
+  if (!category) {
     return {
       props: null,
       notFound: true,
@@ -42,11 +42,11 @@ export const getServerSideProps = async (pageContext) => {
   } else {
     return {
       props: {
-        title: post.title,
-        body: post.body,
+        title: category.title,
+        body: category.body,
       },
     }
   }
 }
 
-export default Post
+export default Category

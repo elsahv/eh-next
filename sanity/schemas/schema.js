@@ -8,8 +8,9 @@ import services from './services'
 import about from './about'
 import skills from './skills'
 import blockContent from './blockContent'
-import studyGuide from './studyGuide'
+import post from './post'
 import miscProjects from './miscProjects'
+import category from './category'
 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -24,8 +25,9 @@ export default createSchema({
      about,
      skills, 
      blockContent,
-     studyGuide,
+     post,
      miscProjects,
+     category,
     /* Your types here! */
   ]),
 })

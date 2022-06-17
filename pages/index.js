@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import IndexGrid from '../components/IndexGrid'
 
 export default function Home() {
