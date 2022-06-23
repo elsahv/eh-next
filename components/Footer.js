@@ -1,6 +1,7 @@
-import SubscribeForm from '../components/SubscribeForm' 
+// import SubscribeForm from '../components/SubscribeForm' 
 import {
   FooterSection,
+  FooterMenu,
   SmIcons,
   Copyright
 } from './styles/Footer.styled'
@@ -16,6 +17,7 @@ import {
 const Footer = () => {
   return (
     <FooterSection>
+      <FooterMenu>
       <Copyright>Copyright © 2022 Elsa Hovey. All rights reserved.</Copyright> 
        
           <SmIcons>
@@ -30,8 +32,8 @@ const Footer = () => {
             </a> */}
 
           </SmIcons>
-          <SubscribeForm />
-
+          {/* <SubscribeForm /> */}
+          </FooterMenu>
         </FooterSection>
   )
 }

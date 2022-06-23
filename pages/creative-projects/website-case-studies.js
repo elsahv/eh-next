@@ -2,7 +2,14 @@ import React from 'react'
 
 const websiteCaseStudies = () => {
   return (
-    <div>website-case-studies</div>
+    <>
+     <ul>
+      <li>Writing to Better Health</li>
+      <li>The Indoor Jungle Project</li>
+      <li>The Running Quail</li>
+      <li>Other Business Projects</li>
+     </ul>
+    </>
   )
 }
 

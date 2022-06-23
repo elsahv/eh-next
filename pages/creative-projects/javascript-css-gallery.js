@@ -2,7 +2,14 @@ import React from 'react'
 
 const javascriptCssGallery = () => {
   return (
-    <div>javascript-css-gallery</div>
+    <>
+      <ul>
+        <li>data structures, algorithms</li>
+        <li>vanilla</li>
+        <li>frameworks- react, nextjs</li>
+   
+      </ul>
+    </>
   )
 }
 

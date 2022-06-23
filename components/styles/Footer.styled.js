@@ -5,8 +5,9 @@ import styled from 'styled-components'
 export const FooterSection = styled.footer`
 display: flex;
 justify-content: center;
+align-items: flex-end;
+padding-top: 6px;
 font-size: 20px;
-padding-top: 20px;
 width: 100%;
 @media only screen and (max-width: 768px) {
     height: 5px;
@@ -14,7 +15,20 @@ width: 100%;
 `
 
 
+export const FooterMenu = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+@media only screen and (max-width: 768px) {
+    
+}
+`
+
+
+
+
 export const Copyright = styled.span`
+margin-left: 100px;
 @media only screen and (max-width: 768px) {
 font-size: 20px;
 text-align: center;
@@ -25,10 +39,11 @@ text-align: center;
 
 export const SmIcons = styled.div`
  margin: 0 10px;
+padding-top: 8px;
+
  width: 150px;
- text-align: right;
  .sm-icon {
-     margin: 2px;
+     margin: 3px;
 font-size: 25px;
 color: #000;
  }
@@ -36,7 +51,6 @@ a:hover {
     color: #007ba5;
 }
 @media only screen and (max-width: 768px) {
-    color: yellow;
 }
 `
 

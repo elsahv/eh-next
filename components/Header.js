@@ -17,6 +17,7 @@ const Header = () => {
    <NavLinks>
        <Link href="/skills">Skills</Link>
        <Link href="/creative-projects">Creative Projects</Link>
+         {/* dropdown menu-> writing project web dev projects */}
        <Link href="/contact">Contact</Link>
        <Link href="/featured-websites">Featured Websites</Link>
      </NavLinks>
