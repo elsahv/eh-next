@@ -5,10 +5,9 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
  display: flex;
  justify-content: center;
- margin: 0 205px;
 
 @media only screen and (max-width: 968px) {
-
+margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -22,10 +21,9 @@ export const Wrapper = styled.div`
 export const LeftSection = styled.div`
 grid-area: a;
 border-right: solid 2px black;
-height: 737px;
 
-@media only screen and (max-width: 968px) {
-    height: 797px;
+@media only screen and (max-width: 1024px) {
+    background: red;
 
 }
 
@@ -76,7 +74,7 @@ margin-top: 45px;
     width: 85px;
     height: 85px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
  
 
 }   

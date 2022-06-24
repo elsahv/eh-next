@@ -6,9 +6,8 @@ export const NavSection = styled.nav`
     display: flex;
     justify-content: center;
     cursor: pointer;
-
-        @media only screen and (max-width: 968px) {
-        height: 110px;
+        @media only screen and (max-width: 1024px) {
+        height: 170px;
         padding-top: 15px;
         }
             @media only screen and (max-width: 768px) {
@@ -49,7 +48,6 @@ text-decoration: none;
 
 
 export const NavLinks = styled.div`
-
     margin: 23px 10px;
     height: 50px;
     width: 500px;
@@ -81,32 +79,4 @@ export const NavLinks = styled.div`
             padding: 0;
                 }
 `
-
-// export const Button = styled.button`
-// font-size: 17px;    
-// background: #3aa1aa;
-// border: solid 2px black;
-// height: 40px;
-// width: 180px;
-// cursor: pointer;
-// margin: 40px 0 0 30px; 
-// transition: all 0.4s ease;
-// &:hover {
-//     transform: translateY(-25%);
-//     color: aquamarine;
-//  }
-//      @media only screen and (max-width: 968px) {
-//         height: 30px;
-//         padding: auto;
-//         margin: auto;
-//      }
-// @media only screen and (max-width: 768px) {
-//     position: relative;
-//     top: 0;
-//     background: #fff;
-//     border: none;
-//     font-size: 20px;
-//     width: 100%;
-//     margin: 3px;
-//     }
-// `
+ 

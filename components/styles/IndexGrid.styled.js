@@ -7,20 +7,17 @@ import styled from 'styled-components'
 export const HomeLeft = styled.div`
 .jtpic{
     grid-area: a;
-    padding-top: 259px;
+    padding-top: 152px;
     border-right: solid 2px black;
-    height: 737px;
 }
 .jt-img {
-  height: 479px;
   width: 100%;
 }
 
 @media only screen and (max-width: 968px) {
   .jtpic{
     grid-area: a;
-    padding-top: 490px;
-    height: 798px;
+   width: 100%;
 
 }
 .jt-img {

@@ -9,7 +9,6 @@ Wrapper,
 Grid,
 SkillsTitle,
 Skills
-// Icon
 }
 from "../components/styles/About.styled";
 

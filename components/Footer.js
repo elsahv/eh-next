@@ -16,9 +16,12 @@ import {
 
 const Footer = () => {
   return (
-    <FooterSection>
+    <>
+     <FooterSection>
       <FooterMenu>
-      <Copyright>Copyright © 2022 Elsa Hovey. All rights reserved.</Copyright> 
+      <Copyright>
+        Copyright © 2022 Elsa Hovey. All rights reserved.
+        </Copyright> 
        
           <SmIcons>
             <a className="sm-icon" href="http://github.com/elsahv"> 
@@ -35,6 +38,7 @@ const Footer = () => {
           {/* <SubscribeForm /> */}
           </FooterMenu>
         </FooterSection>
+        </>
   )
 }
 
