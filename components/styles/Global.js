@@ -14,12 +14,18 @@ const GlobalStyles = createGlobalStyle`
 
   .main-container {
     width: 100%;
-    height: 800px;
+    height: 700px;
     background: #3aa1aa;
     border-top: solid 2px black;  
     border-bottom: solid 2px black;
+
     @media only screen and (max-width: 1024px) {
+    height: 1000px;
     }
+    @media only screen and (max-width: 810px) {
+      overflow: hidden;
+      height: 850px;
+      }
     
 }
 

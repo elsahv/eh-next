@@ -7,15 +7,10 @@ export const NavSection = styled.nav`
     justify-content: center;
     cursor: pointer;
         @media only screen and (max-width: 1024px) {
-        height: 170px;
         padding-top: 15px;
-        }
+        height: 100px;
+    }
             @media only screen and (max-width: 768px) {
-               width: 100%;
-               height: 180px;
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
                margin: 0;
                padding: 0;
             }
@@ -23,6 +18,7 @@ export const NavSection = styled.nav`
 
  
 export const Logo = styled.div`
+// background: green;
 font-size: 20px;
 display: flex;  
 align-items: center;
@@ -32,15 +28,12 @@ a {
 text-decoration: none;
     color: black;
 }
-
-@media only screen and (max-width: 968px) {
-    font-size: 20px;
-    padding: 0 20px;    
+@media only screen and (max-width: 1024px) {
+    font-size: 28px;
 }
 
 @media only screen and (max-width: 768px) {
-   font-size: 25px;
-   height: 120px;
+   font-size: 20px;
    padding: 15px 0 5px 25px;
     `
 
@@ -64,7 +57,7 @@ export const NavLinks = styled.div`
         color:  #007ba5;
         transition: 1s;
      }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1024px) {
         display: none;
                 }
 `
