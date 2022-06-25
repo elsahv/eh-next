@@ -42,7 +42,6 @@ text-decoration: none;
    font-size: 25px;
    height: 120px;
    padding: 15px 0 5px 25px;
-   border-bottom: solid 2px black;
     `
 
 
@@ -65,18 +64,8 @@ export const NavLinks = styled.div`
         color:  #007ba5;
         transition: 1s;
      }
-
-
-     @media only screen and (max-width: 968px) {
-           display: flex;
-           margin: 10px;
-     }
         @media only screen and (max-width: 768px) {
-            font-size: 20px;
-            display: flex;
-            justify-content: center;
-            margin: 5px;
-            padding: 0;
+        display: none;
                 }
 `
  

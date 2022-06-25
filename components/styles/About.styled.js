@@ -23,7 +23,6 @@ grid-area: a;
 border-right: solid 2px black;
 
 @media only screen and (max-width: 1024px) {
-    background: red;
 
 }
 

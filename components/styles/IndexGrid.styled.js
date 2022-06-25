@@ -7,9 +7,10 @@ import styled from 'styled-components'
 export const HomeLeft = styled.div`
 .jtpic{
     grid-area: a;
-    padding-top: 152px;
+    padding-top: 158px;
     border-right: solid 2px black;
 }
+
 .jt-img {
   width: 100%;
 }
@@ -18,8 +19,8 @@ export const HomeLeft = styled.div`
   .jtpic{
     grid-area: a;
    width: 100%;
-
 }
+
 .jt-img {
   height: 309px;
   width: 100%;
