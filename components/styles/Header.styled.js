@@ -8,17 +8,18 @@ export const NavSection = styled.nav`
     cursor: pointer;
         @media only screen and (max-width: 1024px) {
         padding-top: 15px;
-        height: 100px;
+        height: 150px;
     }
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 834px) {
                margin: 0;
                padding: 0;
+             height: 100px;
+
             }
 `
 
  
 export const Logo = styled.div`
-// background: green;
 font-size: 20px;
 display: flex;  
 align-items: center;

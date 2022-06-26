@@ -21,10 +21,8 @@ const Header = () => {
       </Logo> 
 
    <NavLinks>
-       <Link href="/skills">Skills</Link>
+       <Link href="/about">About</Link>
        <Link href="/creative-projects">Creative Projects</Link>
-       <Link href="/contact">Contact</Link>
-
        <Link href="/featured-websites">Featured Websites</Link>
      </NavLinks>
 

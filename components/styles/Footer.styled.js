@@ -6,10 +6,8 @@ export const FooterSection = styled.footer`
 display: flex;
 justify-content: center;
 padding-top: 6px;
-font-size: 20px;
 width: 100%;
 @media only screen and (max-width: 768px) {
-font-size: 10px;
 
 }
 `
@@ -29,8 +27,9 @@ align-items: center;
 
 export const Copyright = styled.span`
 margin-left: 100px;
+font-size: 18px;
 @media only screen and (max-width: 768px) {
-font-size: 20px;
+font-size: 16px;
 text-align: center;
 }
 `

@@ -16,6 +16,14 @@ grid-template-areas:
 'a' 
 'b';
 }
+@media only screen and (max-width: 768px) {
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(2, 238px);
+   grid-template-areas: 
+   'a' 
+   'b';
+   }
 
 `
 export const LeftSide = styled.div`

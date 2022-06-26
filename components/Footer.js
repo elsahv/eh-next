@@ -20,7 +20,7 @@ const Footer = () => {
      <FooterSection>
       <FooterMenu>
       <Copyright>
-        Copyright © 2022 Elsa Hovey. All rights reserved.
+        Copyright © 2022. All rights reserved.
         </Copyright> 
        
           <SmIcons>

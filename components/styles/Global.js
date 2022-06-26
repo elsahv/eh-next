@@ -21,11 +21,17 @@ const GlobalStyles = createGlobalStyle`
 
     @media only screen and (max-width: 1024px) {
     height: 1000px;
+    overflow: hidden;
+
     }
+
     @media only screen and (max-width: 810px) {
-      overflow: hidden;
       height: 850px;
       }
+      
+      @media only screen and (max-width: 500px) {
+        height: 1000px;
+        }
     
 }
 

@@ -27,6 +27,7 @@ export default function About({posts}) {
           <div className="main-grid">  
         <LeftSection>
         <Title>Skills</Title>
+        
         <Wrapper>
         <Grid>
        {posts &&
