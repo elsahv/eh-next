@@ -1,9 +1,13 @@
 import styled from 'styled-components'
 
+
+
 export const Title = styled.h2`
 text-align: center;
-padding-top: 150px;
-
+margin-top: 170px;
+padding: 15px;
+background: #3aa1aa;
+border: solid 2px black;
 `
 export const Description = styled.span`
  padding: 25px;
@@ -18,6 +22,7 @@ padding-top: 20px;
 `
 
 export const Grid = styled.div`
+padding: 55px;
 display: grid;
 grid-template-columns: repeat(4, 370px);
 grid-gap: 3em;

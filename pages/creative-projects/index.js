@@ -10,7 +10,16 @@ import {
 
 
   //STYLES
-  const Title = styled.div`
+
+  export const Title = styled.h2`
+  text-align: center;
+  margin-top: 170px;
+  padding: 15px;
+  background: #3aa1aa;
+  border: solid 2px black;
+  `
+
+  const GridTitle = styled.div`
   font-size: 35px;
      color: #007ba5;
      text-align: center;
@@ -60,10 +69,10 @@ const Projects = () => {
       </Head>
 
 
-
+       <Title>Creative Projects</Title>
      <Grid>
       <LeftSide>
-      <Title>Writing Projects</Title>
+      <GridTitle>Writing Projects</GridTitle>
 
           <ProjectLink>
           <Link href="/creative-projects/on-finding-creativity"> 
@@ -81,7 +90,7 @@ const Projects = () => {
  
        
       <RightSide>
-          <Title>Javascript Projects</Title>
+          <GridTitle>Javascript Projects</GridTitle>
       <ProjectLink>
         <Link href="/creative-projects/gallery"> 
       Data Stuctures and Algorithms

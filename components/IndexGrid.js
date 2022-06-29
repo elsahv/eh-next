@@ -29,12 +29,10 @@ const IndexGrid = () => {
                </HomeLeft>
  
                <HomeRight>
-
                <IntroSection> 
               <Intro>{"Hi there, I'm Elsa"}</Intro>         
               <Headline>{"I'm a web developer based in Joshua Tree, CA. I create niche websites and solutions for small business owners and creatives. "}</Headline>
               </IntroSection>
-              
                 <About>
                 <img
                       className='portfolio-img'
@@ -43,16 +41,12 @@ const IndexGrid = () => {
                       width="180"
                       height="300"
                       />
-   
                       {/* JUMP TO MARKER */}
                       <h2>About</h2> 
                 <p> Im currently working as a freelance web developer while building up my own side projects.
                         I like to keep multiple hobbies and small business projects, and have created websites to keep track of my progress. My curiosity is what keeps me going, along with the desire to help other people with their endeavors.</p>
                 </About>
-
-
                 <Skills>
-
                 <h3>Frontend Web Design</h3> 
                           <li>Colorful websites for creative niches and small businesses.</li>
                           <li>Quick and interactive styling</li>
@@ -65,16 +59,9 @@ const IndexGrid = () => {
                             <a href="/websites">own projects</a>
                               </li> 
                 </Skills>
-
-
                 <Tools>tools</Tools>
                  latest
-
                 <Contact>contact</Contact>
-
-
-
-
 
                 
          </HomeRight>

@@ -4,7 +4,6 @@ import styled from 'styled-components'
 //STYLES
 export const Wrapper = styled.div`
 z-index: 20;
-
   height: 100vh;
   list-style: none;   
   display: grid;

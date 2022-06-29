@@ -1,72 +1,96 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 
-//STYLESimport styled from 'styled-components'
+//STYLES
 
- 
- 
- 
-export const Logo = styled.div`
-position: fixed;
-font-size: 22px;
-display: flex;  
-align-items: center;
-font-weight: 900;
-a {
-text-decoration: none;
-    color: black;
+const SmLink = styled.div`
+position: absolute;
+display: flex;
+color: #3aa1aa;
+margin: 60px;
+padding: 15px;
+  right: 0;
+top: 0;
+li {
+  list-style: none;
+
 }
-@media only screen and (max-width: 1024px) {
-    font-size: 28px;
-}
-@media only screen and (max-width: 768px) {
-   font-size: 20px;
-   padding: 15px 0 5px 25px;
-    `
-
-
-
-export const NavLinks = styled.div`
-background-color:  #007ba5;
-height: 00px;
-    position: fixed;
-    display:flex;
-    font-size: 17px;
-    margin-top: 50px;
-    a {
-        color:  #000;
-    text-decoration: none;
-    margin: 15px;
-    }
-     a:hover {
-        color:  #007ba5;
-        transition: 1s;
-     }
-        @media only screen and (max-width: 1024px) {
-        display: none;
-                }
 `
- 
 
+const HeaderSection = styled.div`
+background: #3aa1aa;
+border: solid 2px black;
+margin: 45px;
+position: absolute;
+top: 0;
+padding: 20px;
+` 
+
+const Logo = styled.div`
+font-weight: bold;
+font-size: 20px;
+  a {
+  color:  #000;
+  text-decoration: none;
+}
+`
+
+
+
+const NavLinks = styled.div`
+padding-top: 5px;
+font-size: 15px;
+a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #000;
+}
+`
 
 //END STYLES
 
 
+
+
+
+
+ 
+
 const Header = () => {
   return (
     <>
-  
-      <NavLinks>
-      <Logo href="/">
-        Elsa Hovey- Development/ Design
-        </Logo>
+    
+    <SmLink>
+    <ul>
+      <li>instagram</li>
+      <li>fb</li>
+      <li>linkedin</li>
+      <li>github</li>
+      <li>search</li>
+    </ul>
+    </SmLink>
+
+    <HeaderSection>
+     <Logo>
+     <Link href="/">
+      Elsa Hovey- Development/ Design
+      </Link>
+      </Logo>
+
+       <NavLinks>
        <Link href="/">About</Link>
-       <Link href="/blog">Blog</Link>
-       <Link href="/creative-projects">Creative Projects</Link>
-       <Link href="/featured-websites">Featured Websites</Link>
-       <Link href="/">Contact</Link>
-       </NavLinks>
+        <Link href="/featured-websites">Featured Websites</Link>
+        <Link href="/creative-projects">Creative Projects</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/">Contact</Link>
+        </NavLinks>  
+
+
+    
+
+    </HeaderSection>
     </>
+
   )
 }
 
