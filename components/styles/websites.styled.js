@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Title = styled.h2`
 text-align: center;
-padding: 20px;
+padding-top: 150px;
 
 `
 export const Description = styled.span`
@@ -14,7 +14,7 @@ export const Description = styled.span`
 export const Wrapper = styled.div`
 display: flex;
 justify-content: center;
-padding-top: 50px;
+padding-top: 20px;
 `
 
 export const Grid = styled.div`
@@ -27,6 +27,20 @@ cursor: pointer;
     height: 215px;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
+}
+
+@media only screen and (max-width: 1024px) {
+    display: grid;
+grid-template-columns: repeat(2, 350px);
+grid-template-rows: repeat(2, 350px);
+grid-gap: 3em;
+}
+
+@media only screen and (max-width: 768x) {
+    display: grid;
+grid-template-columns: 350px;
+grid-template-rows: repeat(4, 350px);
+grid-gap: 3em;
 }
 `
 

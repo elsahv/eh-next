@@ -1,6 +1,6 @@
 export default {
-    name: 'miscProjects',
-    title: 'Misc Projects',
+    name: 'projects',
+    title: 'Projects',
     type: 'document',
     fields: [
       {

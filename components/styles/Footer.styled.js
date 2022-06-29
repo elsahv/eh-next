@@ -3,9 +3,8 @@ import styled from 'styled-components'
 
 
 export const FooterSection = styled.footer`
-display: flex;
-justify-content: center;
-padding-top: 6px;
+position: relative;
+bottom: 0; 
 width: 100%;
 @media only screen and (max-width: 768px) {
 
@@ -17,6 +16,7 @@ export const FooterMenu = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+color: teal;
 @media only screen and (max-width: 768px) {
     
 }
@@ -52,4 +52,10 @@ a:hover {
 @media only screen and (max-width: 768px) {
 }
 `
+
+export const ContactForm = styled.div`
+width: 100%;
+height: 500px;
+
+    `
 

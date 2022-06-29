@@ -9,7 +9,6 @@ import {
   import styled from 'styled-components'
 
 
-
   //STYLES
   const Title = styled.div`
   font-size: 35px;
@@ -68,29 +67,29 @@ const Projects = () => {
 
           <ProjectLink>
           <Link href="/creative-projects/on-finding-creativity"> 
-      On Finding Creativity
+            Css Gallery
             </Link>
             </ProjectLink>
 
           <ProjectLink>
           <Link href="/creative-projects/website-case-studies"> 
-           Website Case Studies  
+           Website Templates
             </Link>
                 </ProjectLink>
-      </LeftSide>
+      </LeftSide> 
       
  
        
       <RightSide>
-          <Title>Web Dev Projects</Title>
+          <Title>Javascript Projects</Title>
       <ProjectLink>
         <Link href="/creative-projects/gallery"> 
-      Graphic Arts Gallery
+      Data Stuctures and Algorithms
        </Link>
        </ProjectLink>
       <ProjectLink>
        <Link href="/creative-projects/javascript-css-gallery"> 
-        Javascript Projects
+        Practice Problems 
        </Link>
        </ProjectLink>
        

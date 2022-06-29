@@ -9,7 +9,8 @@ import about from './about'
 import skills from './skills'
 import blockContent from './blockContent'
 import post from './post'
-import miscProjects from './miscProjects'
+import blog from './blog'
+import projects from './projects'
 import category from './category'
 
 
@@ -26,7 +27,8 @@ export default createSchema({
      skills, 
      blockContent,
      post,
-     miscProjects,
+     blog,
+     projects,
      category,
     /* Your types here! */
   ]),

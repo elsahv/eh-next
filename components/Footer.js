@@ -3,7 +3,8 @@ import {
   FooterSection,
   FooterMenu,
   SmIcons,
-  Copyright
+  Copyright,
+  ContactForm
 } from './styles/Footer.styled'
 import { 
   FaGithub,
@@ -17,7 +18,12 @@ import {
 const Footer = () => {
   return (
     <>
+     <ContactForm>
+
+     </ContactForm>
+
      <FooterSection>
+
       <FooterMenu>
       <Copyright>
         Copyright © 2022. All rights reserved.

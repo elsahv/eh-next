@@ -157,6 +157,7 @@ export const SkillsTitle = styled.div`
               <ImageWrapper>
                   <img
                       className='portfolio-img'
+                      
                       src='images/portfolio-pic.jpg'
                       alt='portfolio pic'
                 

@@ -4,7 +4,7 @@ import { sanityClient, urlFor } from "../client"
 import {
 Title, 
 Wrapper,
-Grid,
+Grid, 
 PostTitles,
 Description,
 GridSquare,

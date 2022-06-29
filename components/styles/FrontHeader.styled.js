@@ -2,12 +2,11 @@ import styled from 'styled-components'
 
 
 export const NavSection = styled.nav`
-    width: 100%;
-    display: flex;
-    justify-content: center;
+z-index: 30;
+    position: absolute;
+    margin: 55px;
     cursor: pointer;
         @media only screen and (max-width: 1024px) {
-        padding-top: 15px;
         height: 150px;
     }
             @media only screen and (max-width: 834px) {
@@ -20,10 +19,10 @@ export const NavSection = styled.nav`
 
  
 export const Logo = styled.div`
-font-size: 20px;
+position: fixed;
+font-size: 40px;
 display: flex;  
 align-items: center;
-padding: 25px 40px 0 0;
 font-weight: 900;
 a {
 text-decoration: none;
@@ -32,7 +31,6 @@ text-decoration: none;
 @media only screen and (max-width: 1024px) {
     font-size: 28px;
 }
-
 @media only screen and (max-width: 768px) {
    font-size: 20px;
    padding: 15px 0 5px 25px;
@@ -41,18 +39,16 @@ text-decoration: none;
 
 
 export const NavLinks = styled.div`
-    margin: 23px 10px;
-    height: 50px;
-    width: 500px;
+
+    position: fixed;
     display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
     color: black;
-    font-size: 17px;    
-    padding-top: 5px;
+    font-size: 20px;
+    margin-top: 50px;
     a {
         color:  #000;
     text-decoration: none;
+    margin: 15px;
     }
      a:hover {
         color:  #007ba5;
