@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 
 export const FooterSection = styled.footer`
-border: solid 2px black;
 position: relative;
 bottom: 0; 
 width: 100%;

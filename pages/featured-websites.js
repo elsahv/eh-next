@@ -5,14 +5,12 @@ import styled from 'styled-components'
 
 
 
-export const Title = styled.div`
-text-align: center;
-margin-top: 165px;
-background: #3aa1aa;
-border: solid 2px black;
-font-size: 25px;
-padding: 5px;
-`
+// export const Title = styled.div`
+// text-align: center;
+// margin-top: 165px;
+// font-size: 25px;
+// padding: 5px;
+// `
 
 
 export const Content = styled.span`
@@ -34,7 +32,9 @@ export const Wrapper = styled.div`
 display: flex;
 justify-content: center;
 padding-top: 20px;
-border-bottom: solid 2px teal;
+background: #3aa1aa;
+border: solid 2px black;
+margin-top: 120px;
 `
 
 export const Grid = styled.div`
@@ -101,9 +101,9 @@ export default function Misc({posts}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>     
       
-      <Title>
+      {/* <Title>
      Featured Websites: What I am currently working on...
-      </Title>
+      </Title> */}
    
      <Wrapper> 
        <Grid>

@@ -9,23 +9,21 @@ const Wrapper = styled.div`
 z-index: 1;
 position: absolute;
 top: 0;
-background: #3aa1aa;
 width: 100%;
-border-bottom: solid 2px black;
-padding: 35px 0 0 55px;
+padding: 15px 0 0 55px;
 `
 
 
 const Logo = styled.div`
-text-shadow: 1px 1px 1px #000; 
-font-size: 20px;
+font-size: 25px;
 display: flex;  
 align-items: center;
 font-weight: 900;
 margin-right: 400px;
+
 a {
 text-decoration: none;
-color: #fff;
+
 }
 @media only screen and (max-width: 1024px) {
     font-size: 28px;
@@ -40,10 +38,10 @@ color: #fff;
     display:flex;
     color: black;
     font-size: 20px;
-    margin-left: 100px;
+    margin-left: 130px;
+    margin-top: 33px;
     a {
-text-shadow: 1px 1px 1px  teal; 
-        color: #fff;
+      color: #000;
         text-decoration: none;
         margin: 15px;
     }

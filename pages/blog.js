@@ -8,24 +8,25 @@ import styled from 'styled-components'
 
 //STYLES 
 
-const Title = styled.div`
-text-align: center;
-margin-top: 165px;
-background: aquamarine;
-padding: 10px;
-border: solid 2px black;
-font-size: 25px;
+// const Title = styled.div`
+// text-align: center;
+// margin-top: 165px;
+// padding: 10px;
+// font-size: 25px;
 
-`
+// `
 
  const Wrapper = styled.div`
  width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 120px;
+  background: #3aa1aa;
+  border: solid 2px black;
+
  `
  const Grid = styled.div`
  margin: 50px 100px;
-
  display: grid;
  grid-template-columns: 1fr 1fr;
  grid-template-rows: 1fr;
@@ -59,16 +60,16 @@ background: aquamarine;
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
+{/* 
       <Title>
       Blog
-      </Title>
+      </Title> */}
        <Wrapper>
         <Grid>
           <SideBar>
           <ul>
           <li>List Title</li>
-          <li>Title 1</li>
+          <li>Website</li>
           <li>Title 2</li>
           <li>Title 3</li>
         </ul>

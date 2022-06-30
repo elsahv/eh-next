@@ -45,7 +45,7 @@ z-index: 6000;
   grid-area: b;
   display: flex; 
   flex-direction: column;
-  // margin: 0 0 0 15px;
+  margin: 0 0 0 15px;
   border-left: solid 2px #000;
 `
 

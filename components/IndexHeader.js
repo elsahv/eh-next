@@ -23,14 +23,13 @@ z-index: 7000;
 
  
  const Logo = styled.div`
-text-shadow: 1px 1px 1px #000; 
 font-size: 40px;
 display: flex;  
 align-items: center;
 font-weight: 900;
 a {
 text-decoration: none;
-color: #fff;
+color: #000;
 }
 @media only screen and (max-width: 1024px) {
     font-size: 28px;
@@ -47,13 +46,12 @@ color: #fff;
     color: black;
     font-size: 20px;
     a {
-text-shadow: 1px 1px 1px  teal; 
-        color: #fff;
+        color: #000;
         text-decoration: none;
         margin: 15px;
     }
      a:hover {
-        color:  #007ba5;
+        color:  #fff;
         transition: 1s;
      }
         @media only screen and (max-width: 1024px) {
