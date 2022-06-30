@@ -45,7 +45,7 @@ z-index: 6000;
   grid-area: b;
   display: flex; 
   flex-direction: column;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 10px;
   border-left: solid 2px #000;
 `
 
@@ -56,7 +56,7 @@ export const IntroSection = styled.div`
  display: flex;
 justify-content: center;
   flex-direction: column;
-padding: 75px 25px 55px;
+padding: 75px 0 0;
 background: #fff;
 `
 
@@ -64,8 +64,8 @@ background: #fff;
 export const Intro = styled.h2`
   color: #007ba5;
   font-size: 35px;
-  text-align: right;
-  padding-right: 65px;
+  text-align: left;
+  padding-left: 85px;
 @media only screen and (max-width: 768px) {
   color: #007ba5;
   font-size: 40px;
@@ -95,6 +95,9 @@ export const About = styled.div`
 padding: 55px;
 height: 500px;
 display: flex;
+.portfolio-img {
+  border: solid 2px black;
+}
   `
 
 export const Content = styled.div`
@@ -116,6 +119,8 @@ font-size: 20px;
 
 export const SkillsTitle = styled.h2`
 text-align: center;
+text-decoration: underline;
+
 `
 
 
@@ -197,7 +202,7 @@ h2 {
  
 //*CONTACT SECTION
 export const Contact = styled.div`
-background: aquamarine;
+background: #3aa1aa;
 border-top: solid 2px black;
 border-bottom: solid 2px black;
 text-align: center;

@@ -17,6 +17,7 @@ import {
   SkillsTitle
 } from '../components/styles/IndexGrid.styled'
 import IndexHeader from '../components/IndexHeader'
+import ContactForm from '../components/ContactForm'
   
 
 export default function Home({posts}) {
@@ -54,8 +55,8 @@ export default function Home({posts}) {
                       className='portfolio-img'
                       src='images/portfolio-pic.jpg'
                       alt='portfolio pic'
-                      width="180"
-                      height="300"
+                      width="240"
+                      height="360"
                       />
 
                       {/* JUMP TO MARKER */}
@@ -72,14 +73,14 @@ export default function Home({posts}) {
                 <Skills>
                   <SkillsTitle>Skills</SkillsTitle>
                <ul>
-                <h3>Frontend Web Design</h3> 
+                <h3>- Frontend Web Design</h3> 
                           <li>Colorful websites for creative niches and small businesses.</li>
                           <li>Quick and interactive styling</li>
                           <li>Effective SEO</li>
                           </ul>
 
                 <ul>
-                <h3>Content Management</h3>  
+                <h3>- Content Management</h3>  
                           <li>Currently using Sanity.io for content writing, image management, and backend data storage</li>
                           <li>I work one on one with customers to create the ideal website product</li>
                           <li>In my freetime, I also work and manage my
@@ -110,7 +111,7 @@ export default function Home({posts}) {
 
                  {/* JUMP TO MARKER */}
                 <Contact>
-                  <h2>Contact</h2>
+                  <ContactForm />
                   </Contact>
 
                 
