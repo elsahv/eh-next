@@ -30,13 +30,17 @@ position: fixed;
   .jt-img {
     grid-area: a;
     border-right: solid 2px black;
-    padding-top: 320px;
   }
     @media only screen and (max-width: 968px) {
     }
     @media only screen and (max-width: 768px) {
     }
 ` 
+
+export const JtImg = styled.div`
+padding-top: 500px;
+`
+
 
 
 //*RIGHT

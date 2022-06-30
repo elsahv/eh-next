@@ -36,7 +36,7 @@ function Subscribe() {
     <>
       <Form onSubmit={subscribe}>
 
-      <Title>Newsletter</Title>
+      <Title>Subscribe for Newsletter</Title>
             <FormInput
               required
               name="email"
@@ -47,21 +47,21 @@ function Subscribe() {
             />
 
 
-          <Button
-              disabled={state === 'Loading'}
-              type="submit"
-              className="btn-styles"
-              onClick={subscribe}
-              >
-              Subscribe
-          </Button>
+              <Button
+                  disabled={state === 'Loading'}
+                  type="submit"
+                  className="btn-styles"
+                  onClick={subscribe}
+                  >
+                  Subscribe
+              </Button>
 
-        {state === 'Error' && (
-          <ErrorState className="error-state">{errorMsg}</ErrorState>
-        )}
-        {state === 'Success' && (
-          <SuccessState>Awesome, you are subscribed!</SuccessState>
-        )}
+                {state === 'Error' && (
+                  <ErrorState className="error-state">{errorMsg}</ErrorState>
+                )}
+                {state === 'Success' && (
+                  <SuccessState>Awesome, you are subscribed!</SuccessState>
+                )}
       </Form>
     </>
 

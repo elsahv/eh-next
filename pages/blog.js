@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styled from 'styled-components'
-
+import SubscribeForm from '../components/SubscribeForm'
 
 
 
@@ -40,12 +40,11 @@ const Grid = styled.div`
 
 const LeftSide = styled.div`
 border-right: solid 2px #000;
-text-align: center;
-h2 {
-  margin: 50px;
-}
-span {
-  background: pink;
+display: flex;
+justify-content: center;
+padding-top: 70px;
+p {
+  font-size: 20px;  
 }
 `
 
@@ -69,8 +68,16 @@ const Description = styled.div`
 width: 800px;
 color: aquamarine;
 font-size: 20px;
-
 `
+
+const SubscribeWrapper = styled.div`
+h2 {
+  text-align: center;
+  padding: 25px;
+}
+`
+
+
 
 
 
@@ -91,17 +98,20 @@ font-size: 20px;
       </Head>
 
        <Wrapper>
-
        <Title>Recent Posts</Title>
-      
+
      <Grid>
 
+
      <LeftSide>
-      <h2>Newsletter Subscribe</h2>
-      <span>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quae aspernatur harum voluptatum tempora consectetur cum voluptatem non sint illum dicta quaerat sunt odio molestias, libero alias voluptates cumque delectus!
-       </span>
+      <SubscribeWrapper>
+        <p>I write about my progress as a web developer, and document my projects.</p>
+        <h2>Subscribe Form</h2>
+       <SubscribeForm />
+       </SubscribeWrapper>      
        </LeftSide>
+
+
        <RightSide>
        <ul>
         <PostTitle>Post Title 1</PostTitle>

@@ -96,7 +96,7 @@ export default function Misc({posts}) {
       </Head>     
      
      <Wrapper> 
-        
+        <p>I create websites for small businesses</p>
     
        <Grid>
        {posts &&

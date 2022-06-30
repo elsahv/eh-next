@@ -1,7 +1,10 @@
 import Head from 'next/head'
+import Image from 'next/image'
+
 import { sanityClient, urlFor } from "../client"
 import {
   Wrapper,
+  JtImg,
   HomeLeft,
   HomeRight,
   IntroSection,
@@ -33,12 +36,15 @@ export default function Home({posts}) {
       <Wrapper>
         <HomeLeft>
           <IndexHeader />
-               <img
+              <JtImg>
+               <Image
                  className='jt-img'
-                 src='images/joshuatreeabout.png'
+                 src='/images/joshuatreeabout.png'
                  alt='joshua tree'
+                 width="970"
+                 height="460"
                  />
-                 
+                 </JtImg>
                </HomeLeft>
  
                <HomeRight>
@@ -51,11 +57,11 @@ export default function Home({posts}) {
 
 
                 <About>
-                <img
+                <Image
                       className='portfolio-img'
-                      src='images/portfolio-pic.jpg'
+                      src='/images/portfolio-pic.jpg'
                       alt='portfolio pic'
-                      width="240"
+                      width="1100"
                       height="360"
                       />
 
