@@ -16,7 +16,7 @@ export const FooterMenu = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-color: teal;
+color: #000;
 @media only screen and (max-width: 768px) {
     
 }
@@ -52,10 +52,4 @@ a:hover {
 @media only screen and (max-width: 768px) {
 }
 `
-
-export const ContactForm = styled.div`
-width: 100%;
-height: 500px;
-
-    `
-
+ 

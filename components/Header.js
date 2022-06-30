@@ -20,10 +20,8 @@ display: flex;
 align-items: center;
 font-weight: 900;
 margin-right: 400px;
-
 a {
 text-decoration: none;
-
 }
 @media only screen and (max-width: 1024px) {
     font-size: 28px;
@@ -71,9 +69,11 @@ const Header = () => {
       </Logo> 
           <Link href="/">About</Link>
           <Link href="/">Contact</Link>
-       <Link href="/featured-websites">Featured Websites</Link>
-       <Link href="/creative-projects">Creative Projects</Link>
        <Link href="/blog">Blog</Link>
+
+       <Link href="/creative-projects">Creative Projects</Link>
+       <Link href="/featured-websites">Featured Websites</Link>
+
    </NavLinks>
 
     </Wrapper>

@@ -8,41 +8,71 @@ import styled from 'styled-components'
 
 //STYLES 
 
-// const Title = styled.div`
-// text-align: center;
-// margin-top: 165px;
-// padding: 10px;
-// font-size: 25px;
-
-// `
-
  const Wrapper = styled.div`
  width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-top: 120px;
   background: #3aa1aa;
   border: solid 2px black;
+  
+  ul {
+    margin: 55px;
+  }
+ ` 
 
- `
- const Grid = styled.div`
- margin: 50px 100px;
- display: grid;
- grid-template-columns: 1fr 1fr;
- grid-template-rows: 1fr;
- grid-template-areas:
- 'a b';
-`
- 
-const Posts = styled.div`
-grid-area: b;
-background: pink;
+ const Title = styled.h2`
+ display: flex;
+ justify-content: center;
+ padding: 20px;
 `
 
-const SideBar = styled.div`
-grid-area: a;
-background: aquamarine;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;  
+  grid-template-areas: 
+  'a b';
 `
+
+
+const LeftSide = styled.div`
+border-right: solid 2px #000;
+text-align: center;
+h2 {
+  margin: 50px;
+}
+span {
+  background: pink;
+}
+`
+
+const RightSide = styled.div``
+
+
+
+ const PostTitle   = styled.div`
+ font-weight: bold;
+ font-size: 30px;
+ text-decoration: underline;
+ color: #007ba5;
+
+`
+
+const Date = styled.div`
+
+`
+
+const Description = styled.div`
+width: 800px;
+color: aquamarine;
+font-size: 20px;
+
+`
+
+
 
 //END STYLES
 
@@ -60,24 +90,48 @@ background: aquamarine;
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-{/* 
-      <Title>
-      Blog
-      </Title> */}
        <Wrapper>
-        <Grid>
-          <SideBar>
-          <ul>
-          <li>List Title</li>
-          <li>Website</li>
-          <li>Title 2</li>
-          <li>Title 3</li>
-        </ul>
-          </SideBar>
-            <Posts>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga alias impedit obcaecati dolorem provident officiis veniam eum nam fugiat architecto accusamus, consequuntur maxime! Praesentium, quisquam labore ratione voluptatem quia tempore!
-            </Posts>
-    </Grid>
+
+       <Title>Recent Posts</Title>
+      
+     <Grid>
+
+     <LeftSide>
+      <h2>Newsletter Subscribe</h2>
+      <span>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quae aspernatur harum voluptatum tempora consectetur cum voluptatem non sint illum dicta quaerat sunt odio molestias, libero alias voluptates cumque delectus!
+       </span>
+       </LeftSide>
+       <RightSide>
+       <ul>
+        <PostTitle>Post Title 1</PostTitle>
+        <Date>6/30/22</Date>
+        <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex a ut dolorem dignissimos sequi voluptas blanditiis, at aliquam eius numquam! Culpa, architecto doloribus minima dolorem rerum dolor ipsam ipsum!</Description>
+       </ul>
+
+       <ul>
+        <PostTitle>Post Title 2</PostTitle>
+        <Date>7/4/22</Date>
+        <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex a ut dolorem dignissimos sequi voluptas blanditiis, at aliquam eius numquam! Culpa, architecto doloribus minima dolorem rerum dolor ipsam ipsum!</Description>
+       </ul>
+
+       <ul>
+        <PostTitle>Post Title 3</PostTitle>
+        <Date>7/10/22</Date>
+        <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex a ut dolorem dignissimos sequi voluptas blanditiis, at aliquam eius numquam! Culpa, architecto doloribus minima dolorem rerum dolor ipsam ipsum!</Description>
+       </ul>
+
+       <ul>
+        <PostTitle>Post Title 4</PostTitle>
+        <Date>7/20/22</Date>
+        <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex a ut dolorem dignissimos sequi voluptas blanditiis, at aliquam eius numquam! Culpa, architecto doloribus minima dolorem rerum dolor ipsam ipsum!</Description>
+       </ul>
+       </RightSide>
+
+
+
+       </Grid>
+ 
        </Wrapper>
      </>
    )
