@@ -53,20 +53,19 @@ z-index: 6000;
 
 //*INTRO SECTION
 export const IntroSection = styled.div`
-background: aquamarine;
-display: flex;
+ display: flex;
 justify-content: center;
   flex-direction: column;
-overflow-y: scroll;
-scrollbar-color: blue;
-padding: 85px 25px;
+padding: 75px 25px 55px;
+background: #fff;
 `
 
 
 export const Intro = styled.h2`
   color: #007ba5;
   font-size: 35px;
-  text-align: center;
+  text-align: right;
+  padding-right: 65px;
 @media only screen and (max-width: 768px) {
   color: #007ba5;
   font-size: 40px;
@@ -77,7 +76,7 @@ export const Intro = styled.h2`
 `
 
 export const Headline = styled.span`
-       color: #007ba5;
+       color:  #3aa1aa;
        text-align: center;
        cursor: pointer;
        font-size: 25px;
@@ -93,24 +92,120 @@ export const Headline = styled.span`
 
 //*ABOUT SECTION
 export const About = styled.div`
-background: pink;
+padding: 55px;
 height: 500px;
+display: flex;
+  `
 
+export const Content = styled.div`
+h2 {
+  text-align: left;
+  margin: 10px 20px;
+  color: teal;
+  border-bottom: solid 2px teal;  
+}
+p {
+  margin: 15px;
+color:  #007ba5;
+font-size: 20px;
+}
 `
+
 
 //*SKILLS SECTION
-export const Skills = styled.div`
-background: aquamarine;
+
+export const SkillsTitle = styled.h2`
+text-align: center;
 `
+
+
+
+export const Skills = styled.div`
+border-top: solid 2px black;
+border-bottom: solid 2px black;
+background: aquamarine;
+padding: 35px;
+h3 {
+  color: #000;
+text-align: left;
+
+}
+ul {
+  list-style: none;
+   margin: 25px;
+text-align: left;
+
+}
+li {
+  font-size: 20px;
+  margin: 5px;
+}
+`
+
+
+
+
 
 //*TOOLS SECTION
-export const Tools = styled.div`
-background: pink;
+export const ToolsTitle = styled.h2`
+text-align: center;
+background: silver; 
+padding: 20px;
 `
 
+export const ToolsWrapper = styled.div`
+display: flex;
+justify-content: center;
+background: silver; 
+`
+
+export const Grid = styled.div`
+width: 550px;
+margin: 35px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+  .img {
+    background: teal;
+    border-radius: 25px;
+    width: 85px;
+    height: 85px;
+}
+
+h2 {
+  font-size: 15px;
+  padding: 5px;
+  font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+ 
+}  
+`
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
 //*CONTACT SECTION
 export const Contact = styled.div`
 background: aquamarine;
+border-top: solid 2px black;
+border-bottom: solid 2px black;
+text-align: center;
+font-weight: bold;
+height: 600px;
+h2 {
+  padding: 10px;
+}
 `
 
 

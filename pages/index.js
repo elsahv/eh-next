@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { sanityClient, urlFor } from "../client"
 import {
   Wrapper,
   HomeLeft,
@@ -7,14 +8,18 @@ import {
   Intro,
   Headline,
   About,
+  Content,
   Skills,
-  Tools,
-  Contact
+  ToolsTitle,
+  Contact,
+  Grid,
+  ToolsWrapper,
+  SkillsTitle
 } from '../components/styles/IndexGrid.styled'
 import IndexHeader from '../components/IndexHeader'
   
 
-export default function Home() {
+export default function Home({posts}) {
   return (
     <>
     <div>
@@ -40,6 +45,10 @@ export default function Home() {
               <Intro>{"Hi there, I'm Elsa"}</Intro>         
               <Headline>{"I'm a web developer based in Joshua Tree, CA. I create niche websites and solutions for small business owners and creatives. "}</Headline>
               </IntroSection>
+
+
+
+
                 <About>
                 <img
                       className='portfolio-img'
@@ -48,27 +57,61 @@ export default function Home() {
                       width="180"
                       height="300"
                       />
+
                       {/* JUMP TO MARKER */}
-                      <h2>About</h2> 
+                      <Content>
+                       <h2>About</h2>  
                 <p> Im currently working as a freelance web developer while building up my own side projects.
                         I like to keep multiple hobbies and small business projects, and have created websites to keep track of my progress. My curiosity is what keeps me going, along with the desire to help other people with their endeavors.</p>
+                        </Content>
                 </About>
+
+
+
+
                 <Skills>
+                  <SkillsTitle>Skills</SkillsTitle>
+               <ul>
                 <h3>Frontend Web Design</h3> 
                           <li>Colorful websites for creative niches and small businesses.</li>
                           <li>Quick and interactive styling</li>
                           <li>Effective SEO</li>
+                          </ul>
 
+                <ul>
                 <h3>Content Management</h3>  
                           <li>Currently using Sanity.io for content writing, image management, and backend data storage</li>
                           <li>I work one on one with customers to create the ideal website product</li>
                           <li>In my freetime, I also work and manage my
-                            <a href="/websites">own projects</a>
+                             own projects
                               </li> 
+                          </ul>
                 </Skills>
-                <Tools>tools</Tools>
-                 latest
-                <Contact>contact</Contact>
+
+                <ToolsTitle>Tools</ToolsTitle>  
+
+                <ToolsWrapper>
+                   <Grid>
+                      {posts &&
+                      posts.map((post, index) => (   
+                        <span key={index}>
+                        
+                              <img
+                              className="img"
+                              src={urlFor(post.icon)}
+                              />
+                                <h2>{post.name}</h2>
+                        </span>
+                        ))}
+                        
+                      </Grid>
+                      </ToolsWrapper>
+
+
+                 {/* JUMP TO MARKER */}
+                <Contact>
+                  <h2>Contact</h2>
+                  </Contact>
 
                 
          </HomeRight>
@@ -81,3 +124,23 @@ export default function Home() {
 }
   
 
+
+export const getServerSideProps = async () => {
+  const query = '*[ _type == "skills"] | order(_createdAt desc)[0..9]'
+  const posts = await sanityClient.fetch(query)
+
+  if (!posts.length) {
+    return {
+      props: {
+        posts: [],
+      },
+    }
+  } else {
+    return {
+      props: {
+        posts,
+      },
+    }
+  }
+}
+ 
