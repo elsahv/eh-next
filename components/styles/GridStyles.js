@@ -3,11 +3,16 @@ import styled from 'styled-components'
 
 //STYLES
 export const Grid = styled.div`
+margin-top: 155px;
+border: solid 2px black;
+background: #3aa1aa;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 697px;  
+grid-template-rows: 500px;  
 grid-template-areas: 
 'a b';
+
+
 @media only screen and (max-width: 1024px) {
  display: grid;
 grid-template-columns: 1fr;

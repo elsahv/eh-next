@@ -1,28 +1,33 @@
-import styled from 'styled-components'
 import Link from 'next/link'
 import Sidebar from './Sidebar'
 
+import styled from 'styled-components'
 
-
-//STYLES
-const Wrapper = styled.div`
-z-index: 1;
-position: absolute;
-top: 0;
+//FRONT
+ const NavSection = styled.nav`
+position: fixed;
 background: #3aa1aa;
-width: 100%;
-border-bottom: solid 2px black;
-padding: 35px 0 0 55px;
+z-index: 7000;
+    padding: 50px 0 0 55px;
+    cursor: pointer;
+        @media only screen and (max-width: 1024px) {
+        height: 150px;
+    }
+            @media only screen and (max-width: 834px) {
+               margin: 0;
+               padding: 0;
+             height: 100px;
+
+            }
 `
 
-
-const Logo = styled.div`
+ 
+ const Logo = styled.div`
 text-shadow: 1px 1px 1px #000; 
-font-size: 20px;
+font-size: 40px;
 display: flex;  
 align-items: center;
 font-weight: 900;
-margin-right: 400px;
 a {
 text-decoration: none;
 color: #fff;
@@ -35,12 +40,12 @@ color: #fff;
    padding: 15px 0 5px 25px;
     `
 
- 
-    const NavLinks = styled.div`
+
+
+ const NavLinks = styled.div`
     display:flex;
     color: black;
     font-size: 20px;
-    margin-left: 100px;
     a {
 text-shadow: 1px 1px 1px  teal; 
         color: #fff;
@@ -57,28 +62,27 @@ text-shadow: 1px 1px 1px  teal;
 `
   
 
-// END STYLES
-
 const Header = () => {
   return (
-    <Wrapper>
-
-   
-      <NavLinks>
-      <Logo> 
+    <>
+     <NavSection>
+    
+     <Logo> 
      <Sidebar />
       <Link href="/">
         Elsa Hovey- Development/ Design
         </Link>
       </Logo> 
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+   <NavLinks>
+       {/* <Link href="/">About</Link> */}
+       <Link href="/">Contact</Link>
        <Link href="/featured-websites">Featured Websites</Link>
        <Link href="/creative-projects">Creative Projects</Link>
        <Link href="/blog">Blog</Link>
-   </NavLinks>
+     </NavLinks>
 
-    </Wrapper>
+      </NavSection>
+    </>
   )
 }
 

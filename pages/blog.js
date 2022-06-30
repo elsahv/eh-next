@@ -7,26 +7,42 @@ import styled from 'styled-components'
 
 
 //STYLES 
-export const Title = styled.h2`
+
+const Title = styled.div`
 text-align: center;
-margin-top: 170px;
-padding: 15px;
-background: #3aa1aa;
+margin-top: 165px;
+background: aquamarine;
+padding: 10px;
 border: solid 2px black;
+font-size: 25px;
+
 `
 
  const Wrapper = styled.div`
  width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 200px;
- background: aquamarine;
- border: solid 2px black;
  `
- const Content = styled.div`
- 
+ const Grid = styled.div`
+ margin: 50px 100px;
+
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr;
+ grid-template-areas:
+ 'a b';
 `
  
+const Posts = styled.div`
+grid-area: b;
+background: pink;
+`
+
+const SideBar = styled.div`
+grid-area: a;
+background: aquamarine;
+`
+
 //END STYLES
 
 
@@ -43,12 +59,24 @@ border: solid 2px black;
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Title>Blog</Title>
 
+      <Title>
+      Blog
+      </Title>
        <Wrapper>
-        <Content>
-      dfsd  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ex, vitae iste error aspernatur veritatis recusandae consectetur assumenda autem aut architecto reiciendis eos sequi nihil ea praesentium accusamus cupiditate! Non.
-    </Content>
+        <Grid>
+          <SideBar>
+          <ul>
+          <li>List Title</li>
+          <li>Title 1</li>
+          <li>Title 2</li>
+          <li>Title 3</li>
+        </ul>
+          </SideBar>
+            <Posts>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga alias impedit obcaecati dolorem provident officiis veniam eum nam fugiat architecto accusamus, consequuntur maxime! Praesentium, quisquam labore ratione voluptatem quia tempore!
+            </Posts>
+    </Grid>
        </Wrapper>
      </>
    )

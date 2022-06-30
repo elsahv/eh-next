@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 //STYLES
 export const Wrapper = styled.div`
-z-index: 20;
-  height: 100vh;
   list-style: none;   
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -26,6 +24,7 @@ z-index: 20;
 
 
 export const HomeLeft = styled.div`
+z-index: 10;
 background: #3aa1aa;
 position: fixed;
   .jt-img {
@@ -42,13 +41,12 @@ position: fixed;
 
 //*RIGHT
 export const HomeRight = styled.div`
-z-index: 20;
-
+z-index: 6000;
   grid-area: b;
   display: flex; 
   flex-direction: column;
-  margin: 0 0 0 15px;
-  // border-left: solid 2px #007ba5;
+  // margin: 0 0 0 15px;
+  border-left: solid 2px #000;
 `
 
 

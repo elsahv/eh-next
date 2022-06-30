@@ -1,17 +1,95 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import { sanityClient, urlFor } from "../client"
-import {
-Title, 
-Wrapper,
-Grid, 
-PostTitles,
-Description,
-GridSquare,
-Tags
-} from '../components/styles/websites.styled'
+import styled from 'styled-components'
 
 
+
+export const Title = styled.div`
+text-align: center;
+margin-top: 165px;
+background: #3aa1aa;
+border: solid 2px black;
+font-size: 25px;
+padding: 5px;
+`
+
+
+export const Content = styled.span`
+font-size: 18px;
+margin: 15px 85px;
+padding: 25px;
+display: flex;
+justify-content: center;
+`
+
+
+export const Description = styled.span`
+ padding: 25px;
+ font-size: 13px;
+`
+
+
+export const Wrapper = styled.div`
+display: flex;
+justify-content: center;
+padding-top: 20px;
+border-bottom: solid 2px teal;
+`
+
+export const Grid = styled.div`
+padding: 55px;
+display: grid;
+grid-template-columns: repeat(4, 370px);
+grid-gap: 3em;
+cursor: pointer;
+.image {
+    width: 100%;
+    height: 215px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+@media only screen and (max-width: 1024px) {
+    display: grid;
+grid-template-columns: repeat(2, 350px);
+grid-template-rows: repeat(2, 350px);
+grid-gap: 3em;
+}
+
+@media only screen and (max-width: 768x) {
+    display: grid;
+grid-template-columns: 350px;
+grid-template-rows: repeat(4, 350px);
+grid-gap: 3em;
+}
+`
+
+export const PostTitles = styled.h4`
+ font-size: 20px;
+ padding: 5px;
+ 
+`
+
+export const GridSquare = styled.h4`
+background: teal;
+border: solid 2px black;
+border-radius: 45px;
+text-align: center;
+height: 340px;
+transition: all 0.3s ease;
+&:hover{
+    transform: rotate(3deg);
+   }
+   a {
+       color: #000;
+       text-decoration: none;
+   }
+`
+
+export const Tags = styled.h4`
+font-size: 12px;
+`
 
 
 export default function Misc({posts}) {
@@ -23,7 +101,10 @@ export default function Misc({posts}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>     
       
-     <Title>Featured Websites</Title>
+      <Title>
+     Featured Websites: What I am currently working on...
+      </Title>
+   
      <Wrapper> 
        <Grid>
        {posts &&
