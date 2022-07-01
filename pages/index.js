@@ -106,6 +106,7 @@ export default function Home({posts}) {
                               <img
                               className="img"
                               src={urlFor(post.icon)}
+                              alt=""
                               />
                                 <h2>{post.name}</h2>
                         </span>
