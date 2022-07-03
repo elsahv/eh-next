@@ -3,9 +3,11 @@ import styled from 'styled-components'
 
 
 export const FooterSection = styled.footer`
+background: teal;
 position: relative;
 bottom: 0; 
 width: 100%;
+border-top: solid 2px black;
 @media only screen and (max-width: 768px) {
 
 }

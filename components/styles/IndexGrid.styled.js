@@ -3,15 +3,17 @@ import styled from 'styled-components'
 
 //STYLES
 export const Wrapper = styled.div`
-  list-style: none;   
-  display: grid;
+position:absolute;
+top: 0;
+z-index: 10000;   
+display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
   'a b';
 
-@media only screen and (max-width: 768px) {
-  list-style: none;   
+@media only screen and (max-width: 1024px) {
+  z-index: 0;
   display: grid;
   grid-template-columns: 1fr;
   // grid-template-rows: 695px;
@@ -24,14 +26,15 @@ export const Wrapper = styled.div`
 
 
 export const HomeLeft = styled.div`
-z-index: 10;
 background: #3aa1aa;
 position: fixed;
   .jt-img {
     grid-area: a;
     border-right: solid 2px black;
   }
-    @media only screen and (max-width: 968px) {
+    @media only screen and (max-width: 1024px) {
+      display: none;
+       
     }
     @media only screen and (max-width: 768px) {
     }
@@ -39,18 +42,27 @@ position: fixed;
 
 export const JtImg = styled.div`
 padding-top: 500px;
+@media only screen and (max-width: 1024px) {
+  width: 100%;
+  height: 200px;
+  padding: 0;
+}
 `
 
 
 
 //*RIGHT
 export const HomeRight = styled.div`
-z-index: 6000;
   grid-area: b;
   display: flex; 
   flex-direction: column;
   margin: 0 0 0 10px;
   border-left: solid 2px #000;
+@media only screen and (max-width: 1024px) {
+  width: 100%;
+  margin: auto;
+  padding-top: 60px;
+}
 `
 
 
@@ -62,16 +74,20 @@ justify-content: center;
   flex-direction: column;
 padding: 75px 0 0;
 background: #fff;
+@media only screen and (max-width: 1024px) {
+margin: auto;
+padding: auto;  
+// background: pink;
+}
 `
 
 
 export const Intro = styled.h2`
-  color: #007ba5;
+  color: #007ba5; 
   font-size: 35px;
   text-align: left;
   padding-left: 85px;
 @media only screen and (max-width: 768px) {
-  color: #007ba5;
   font-size: 40px;
   margin-top: 25px;
   line-height: 1.5em;
@@ -85,8 +101,7 @@ export const Headline = styled.span`
        cursor: pointer;
        font-size: 25px;
        margin: 5px 30px;
-@media only screen and (max-width: 768px) {
-      color: aquamarine;
+@media only screen and (max-width: 1024px) {
       text-align: center;
       cursor: pointer;
       font-size: 27px;
@@ -95,6 +110,12 @@ export const Headline = styled.span`
     `
 
 //*ABOUT SECTION
+
+// export const PortfolioImg = styled.div`
+// height: 206px;
+// width: 500px;
+// `
+
 export const About = styled.div`
 padding: 55px;
 height: 500px;
@@ -103,17 +124,18 @@ display: flex;
   border: solid 2px black;
 }
   `
+ 
 
 export const Content = styled.div`
 h2 {
   text-align: left;
   margin: 10px 20px;
-  color: teal;
+  color: #007ba5;
   border-bottom: solid 2px teal;  
 }
 p {
   margin: 15px;
-color:  #007ba5;
+color: teal;
 font-size: 20px;
 }
 `
@@ -132,11 +154,11 @@ text-decoration: underline;
 export const Skills = styled.div`
 border-top: solid 2px black;
 border-bottom: solid 2px black;
-background: aquamarine;
 padding: 35px;
 h3 {
-  color: #000;
 text-align: left;
+text-decoration: underline;
+font-size: 25px;
 
 }
 ul {

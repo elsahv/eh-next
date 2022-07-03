@@ -1,71 +1,64 @@
-import React, { useState } from 'react'
-import axios from 'axios'
-import {
-  Form,
-  Title,
-  FormInput,
-  Button,
-  SuccessState,
-  ErrorState
-   
-} from './styles/MailchimpForm.styled'
+import styled from 'styled-components'
 
 
-function Subscribe() {
-  const [email, setEmail] = useState('')
-  const [state, setState] = useState('idle')
-  const [errorMsg, setErrorMsg] = useState(null)
+//STYLES
+const Wrapper = styled.div`
+display: flex;
+justify-content: center;
+ 
+ `
 
-  const subscribe = async (e) => {
-    e.preventDefault()
+const FormInput = styled.input`
+height: 50px;
+padding: 10px;
+background: aquamarine;
+border: solid 2px black;
+width: 450px;
+border-radius: 5px;
+margin: 15px;
+font-size: 20px;
+`
 
-    setState('Loading')
+ 
 
-    try {
-      const response = await axios.post('/api/subscribeApi', { email })
-      setState('Success')
-      setEmail('')
-    } catch (e) {
-      setErrorMsg(e.response.data.error)
-      setState('Error')
-    }
+const Button = styled.button`
+background: aquamarine;
+cursor: pointer;
+margin-top: 20px;
+border: solid 2px black;
+border-radius: 5px;
+height: 35px;
+padding: 5px;
 
-  }
+span {
+color: teal;
+font-size: 17px;  
+ 
 
+ }
+`
+
+//END STYLES
+
+
+
+
+const SubscribeForm = () => 
+{
   return (
-    <>
-      <Form onSubmit={subscribe}>
+    <div>
+        <Wrapper>
+     
 
-      <Title>Subscribe for Newsletter</Title>
-            <FormInput
-              required
-              name="email"
-              type="email"
-              placeholder="Enter email address for updates"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-
-
-              <Button
-                  disabled={state === 'Loading'}
-                  type="submit"
-                  className="btn-styles"
-                  onClick={subscribe}
-                  >
-                  Subscribe
-              </Button>
-
-                {state === 'Error' && (
-                  <ErrorState className="error-state">{errorMsg}</ErrorState>
-                )}
-                {state === 'Success' && (
-                  <SuccessState>Awesome, you are subscribed!</SuccessState>
-                )}
-      </Form>
-    </>
-
+        <FormInput name="email" placeholder="enter email address"/>
+        <Button>
+          <span>
+          Subscribe
+          </span>
+          </Button>
+        </Wrapper>
+    </div>
   )
 }
 
-export default Subscribe
+export default SubscribeForm

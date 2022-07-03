@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import Sidebar from './Sidebar'
-
 import styled from 'styled-components'
 
 //FRONT
@@ -11,7 +9,7 @@ z-index: 7000;
     padding: 50px 0 0 55px;
     cursor: pointer;
         @media only screen and (max-width: 1024px) {
-        height: 150px;
+       display: none;
     }
             @media only screen and (max-width: 834px) {
                margin: 0;
@@ -42,9 +40,10 @@ color: #000;
 
 
  const NavLinks = styled.div`
-    display:flex;
+ padding: 10px;   
+ text-align: right;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     a {
         color: #000;
         text-decoration: none;
@@ -66,17 +65,16 @@ const Header = () => {
      <NavSection>
     
      <Logo> 
-     <Sidebar />
       <Link href="/">
         Elsa Hovey- Development/ Design
         </Link>
       </Logo> 
    <NavLinks>
-       {/* <Link href="/">About</Link> */}
        <Link href="/">Contact</Link>
-       <Link href="/blog">Blog</Link>
-       <Link href="/creative-projects">Creative Projects</Link>
-       <Link href="/featured-websites">Featured Websites</Link>
+   <Link href="/blog">Blog</Link>
+   <Link href="/featured-websites">Featured Websites</Link>
+
+       {/* <Link href="/creative-projects">Creative Projects</Link> */}
 
      </NavLinks>
 

@@ -14,8 +14,6 @@ import SubscribeForm from '../components/SubscribeForm'
   justify-content: center;
   flex-direction: column;
   margin-top: 120px;
-  background: #3aa1aa;
-  border: solid 2px black;
   
   ul {
     margin: 55px;
@@ -66,14 +64,20 @@ const Date = styled.div`
 
 const Description = styled.div`
 width: 800px;
-color: aquamarine;
 font-size: 20px;
 `
 
 const SubscribeWrapper = styled.div`
+border: solid 2px black;
+background: #3aa1aa;
+height: 280px;
+width: 700px;
 h2 {
   text-align: center;
   padding: 25px;
+}
+p {
+  padding: 20px;
 }
 `
 
@@ -105,8 +109,10 @@ h2 {
 
      <LeftSide>
       <SubscribeWrapper>
-        <p>I write about my progress as a web developer, and document my projects.</p>
-        <h2>Subscribe Form</h2>
+      <Title>Subscribe Form</Title>
+
+      <p>I write about my progress as a web developer, and document my projects.</p>
+
        <SubscribeForm />
        </SubscribeWrapper>      
        </LeftSide>

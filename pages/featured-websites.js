@@ -4,7 +4,15 @@ import { sanityClient, urlFor } from "../client"
 import styled from 'styled-components'
 
 
- 
+
+
+
+export const Wrapper = styled.div`
+display: flex;
+justify-content: center;
+margin-top: 10px;
+padding: 200px;
+`
 
 
 export const Content = styled.span`
@@ -22,14 +30,7 @@ export const Description = styled.span`
 `
 
 
-export const Wrapper = styled.div`
-display: flex;
-justify-content: center;
-background: #3aa1aa;
-border: solid 2px black;
-margin-top: 120px;
-padding: 70px;
-`
+ 
 
 export const Grid = styled.div`
 padding: 55px;

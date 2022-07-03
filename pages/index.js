@@ -17,7 +17,8 @@ import {
   Contact,
   Grid,
   ToolsWrapper,
-  SkillsTitle
+  SkillsTitle,
+  // PortfolioImg
 } from '../components/styles/IndexGrid.styled'
 import IndexHeader from '../components/IndexHeader'
 import ContactForm from '../components/ContactForm'
@@ -57,14 +58,16 @@ export default function Home({posts}) {
 
 
                 <About>
-                <Image
+                  {/* <PortfolioImg> */}
+                <img
                       className='portfolio-img'
                       src='/images/portfolio-pic.jpg'
                       alt='portfolio pic'
-                      width="1100"
-                      height="360"
+                      width="400"
+                      height="390"
+                      style={{background:"purple"}}
                       />
-
+               {/* </PortfolioImg> */}
                       {/* JUMP TO MARKER */}
                       <Content>
                        <h2>About</h2>  

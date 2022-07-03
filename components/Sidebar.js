@@ -1,19 +1,29 @@
 import { FaBars } from 'react-icons/fa';
 import {
     // Wrapper,
-    // Logo,
+    Logo,
     MenuOpen,
     // MenuClose,
-    // SidebarLinks
+    // SidebarLinks,
+    SidebarWrapper
   } from './styles/Sidebar.js'
 
 const Sidebar = () => {
   return (
     <>
+    <SidebarWrapper>
+     
+  
     <MenuOpen>
+
     <FaBars />
     </MenuOpen>
 
+    <Logo>
+    Elsa Hovey- Development/ Design
+    </Logo>
+    </SidebarWrapper>
+ 
     </>
   )
 }

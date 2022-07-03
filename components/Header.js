@@ -1,16 +1,20 @@
 import styled from 'styled-components'
 import Link from 'next/link'
-import Sidebar from './Sidebar'
 
 
 
 //STYLES
 const Wrapper = styled.div`
+background: #3aa1aa;
+border-bottom: solid 2px black;
 z-index: 1;
 position: absolute;
 top: 0;
 width: 100%;
 padding: 15px 0 0 55px;
+@media only screen and (max-width: 1024px) {
+  display: none;
+}
 `
 
 
@@ -62,7 +66,6 @@ const Header = () => {
    
       <NavLinks>
       <Logo> 
-     <Sidebar />
       <Link href="/">
         Elsa Hovey- Development/ Design
         </Link>
@@ -71,7 +74,7 @@ const Header = () => {
           <Link href="/">Contact</Link>
        <Link href="/blog">Blog</Link>
 
-       <Link href="/creative-projects">Creative Projects</Link>
+       {/* <Link href="/creative-projects">Creative Projects</Link> */}
        <Link href="/featured-websites">Featured Websites</Link>
 
    </NavLinks>
