@@ -12,18 +12,13 @@ const Sidebar = () => {
   return (
     <>
     <SidebarWrapper>
-     
-  
     <MenuOpen>
-
     <FaBars />
     </MenuOpen>
-
     <Logo>
     Elsa Hovey- Development/ Design
     </Logo>
     </SidebarWrapper>
- 
     </>
   )
 }

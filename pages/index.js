@@ -34,6 +34,8 @@ export default function Home({posts}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
+
+
       <Wrapper>
         <HomeLeft>
           <IndexHeader />
@@ -54,29 +56,23 @@ export default function Home({posts}) {
               <Headline>{"I'm a web developer based in Joshua Tree, CA. I create niche websites and solutions for small business owners and creatives. "}</Headline>
               </IntroSection>
 
-
-
-
                 <About>
                   {/* <PortfolioImg> */}
                 <img
                       className='portfolio-img'
                       src='/images/portfolio-pic.jpg'
                       alt='portfolio pic'
-                      width="400"
-                      height="390"
-                      style={{background:"purple"}}
+
                       />
                {/* </PortfolioImg> */}
                       {/* JUMP TO MARKER */}
+                      
                       <Content>
                        <h2>About</h2>  
                 <p> Im currently working as a freelance web developer while building up my own side projects.
                         I like to keep multiple hobbies and small business projects, and have created websites to keep track of my progress. My curiosity is what keeps me going, along with the desire to help other people with their endeavors.</p>
                         </Content>
                 </About>
-
-
 
 
                 <Skills>
@@ -86,7 +82,7 @@ export default function Home({posts}) {
                           <li>Colorful websites for creative niches and small businesses.</li>
                           <li>Quick and interactive styling</li>
                           <li>Effective SEO</li>
-                          </ul>
+                          </ul> 
 
                 <ul>
                 <h3>- Content Management</h3>  
@@ -98,14 +94,14 @@ export default function Home({posts}) {
                           </ul>
                 </Skills>
 
-                <ToolsTitle>Tools</ToolsTitle>  
 
                 <ToolsWrapper>
+                <ToolsTitle>Tools</ToolsTitle>  
+
                    <Grid>
                       {posts &&
                       posts.map((post, index) => (   
                         <span key={index}>
-                        
                               <img
                               className="img"
                               src={urlFor(post.icon)}
@@ -114,8 +110,8 @@ export default function Home({posts}) {
                                 <h2>{post.name}</h2>
                         </span>
                         ))}
-                        
                       </Grid>
+
                       </ToolsWrapper>
 
 

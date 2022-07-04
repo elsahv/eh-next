@@ -15,6 +15,9 @@ flex-direction: column;
   margin: 15px;
   font-size: 20px;
 }
+@media only screen and (max-width: 500px) {
+  display: none;
+}
 `
 const Title = styled.h2`
 color: black;

@@ -21,7 +21,8 @@ display: grid;
   'a'
   'b';
 }
- 
+@media only screen and (max-width: 500px) {
+}
 `
 
 
@@ -74,11 +75,10 @@ justify-content: center;
   flex-direction: column;
 padding: 75px 0 0;
 background: #fff;
-@media only screen and (max-width: 1024px) {
-margin: auto;
-padding: auto;  
-// background: pink;
-}
+  @media only screen and (max-width: 1024px) {
+  margin: auto;
+  padding: auto;  
+  }
 `
 
 
@@ -93,6 +93,10 @@ export const Intro = styled.h2`
   line-height: 1.5em;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 500px) {
+  padding: 0 20px;
+  margin: 0;
+}
 `
 
 export const Headline = styled.span`
@@ -106,6 +110,10 @@ export const Headline = styled.span`
       cursor: pointer;
       font-size: 27px;
       line-height: 1.5em;
+    }
+    @media only screen and (max-width: 500px) {
+      padding: 20px;
+      margin: 0;
     }
     `
 
@@ -122,9 +130,21 @@ height: 500px;
 display: flex;
 .portfolio-img {
   border: solid 2px black;
+  width: 250px;
+  height: 400px;
+}
+@media only screen and (max-width: 500px) {
+  height: 1000px;
+display: flex;
+flex-direction: column;
+.portfolio-img {
+  border: solid 2px black;
+  margin: 0;
+  padding: 0;
+}
 }
   `
- 
+  
 
 export const Content = styled.div`
 h2 {
@@ -138,6 +158,12 @@ p {
 color: teal;
 font-size: 20px;
 }
+@media only screen and (max-width: 500px) {
+ p {
+  margin: 0;
+  padding: 0;
+ }
+}
 `
 
 
@@ -146,7 +172,8 @@ font-size: 20px;
 export const SkillsTitle = styled.h2`
 text-align: center;
 text-decoration: underline;
-
+@media only screen and (max-width: 500px) {
+}
 `
 
 
@@ -159,7 +186,6 @@ h3 {
 text-align: left;
 text-decoration: underline;
 font-size: 25px;
-
 }
 ul {
   list-style: none;
@@ -171,6 +197,8 @@ li {
   font-size: 20px;
   margin: 5px;
 }
+@media only screen and (max-width: 500px) {
+} 
 `
 
 
@@ -182,17 +210,22 @@ export const ToolsTitle = styled.h2`
 text-align: center;
 background: silver; 
 padding: 20px;
+@media only screen and (max-width: 500px) {
+}
 `
 
 export const ToolsWrapper = styled.div`
 display: flex;
 justify-content: center;
+flex-direction: column;
 background: silver; 
+@media only screen and (max-width: 500px) {
+ 
+}
 `
 
 export const Grid = styled.div`
-width: 550px;
-margin: 35px;
+ margin: 20px 205px;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
   .img {
@@ -201,29 +234,28 @@ grid-template-columns: repeat(4, 1fr);
     width: 85px;
     height: 85px;
 }
-
 h2 {
   font-size: 15px;
   padding: 5px;
   font-size: 15px;
 }
 @media only screen and (max-width: 768px) {
- 
+margin: auto;
+padding: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+  .img {
+    background: teal;
+    border-radius: 25px;
+    width: 55px;
+    height: 55px;
+}
+h2 {
+  padding: 5px;
+  font-size: 10px;
+}
 }  
 `
-
-
- 
-
-
-
-
-
-
-
-
-
-
 
  
 //*CONTACT SECTION
