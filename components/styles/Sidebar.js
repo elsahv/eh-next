@@ -22,6 +22,8 @@ export const Logo = styled.div`
 font-size: 30px;
 @media only screen and (max-width: 768px) {
     font-size: 20px;
+    margin: 0;
+    padding: 20px;
 }
 `
 

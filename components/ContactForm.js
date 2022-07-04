@@ -16,7 +16,9 @@ flex-direction: column;
   font-size: 20px;
 }
 @media only screen and (max-width: 500px) {
-  display: none;
+  #bars {
+    width: 320px;
+  }
 }
 `
 const Title = styled.h2`
@@ -56,7 +58,6 @@ const ContactForm = () =>
     <div>
         <Wrapper>
         <Title>Contact Form</Title>
-
         <FormInput id="bars" name="name" placeholder="name"/>
         <FormInput id="bars" name="email" placeholder="email"/>
         <Textarea id="bars" name="message" placeholder="tell me about your project!"/>
