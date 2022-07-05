@@ -72,7 +72,7 @@ const Header = () => {
    <NavLinks>
        <Link href="/">Contact</Link>
    <Link href="/blog">Blog</Link>
-   <Link href="/featured-websites">Featured Websites</Link>
+   <Link href="/featured-websites">Portfolio</Link>
 
        {/* <Link href="/creative-projects">Creative Projects</Link> */}
 

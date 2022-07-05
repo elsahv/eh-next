@@ -75,7 +75,7 @@ const Header = () => {
        <Link href="/blog">Blog</Link>
 
        {/* <Link href="/creative-projects">Creative Projects</Link> */}
-       <Link href="/featured-websites">Featured Websites</Link>
+       <Link href="/featured-websites">Portfolio</Link>
 
    </NavLinks>
 

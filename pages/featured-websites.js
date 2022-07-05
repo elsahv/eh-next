@@ -8,6 +8,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
 display: flex;
 justify-content: center;
+padding: 80px;
 `
 
 
@@ -47,12 +48,12 @@ cursor: pointer;
 }
 @media only screen and (max-width: 1024px) {
   display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(2, 300px);
 grid-gap: 3em;
 }
 @media only screen and (max-width: 500px) {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 260px;
   grid-gap: 3em;
 }
  
