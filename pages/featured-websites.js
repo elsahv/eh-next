@@ -5,13 +5,9 @@ import styled from 'styled-components'
 
 
 
-
-
 export const Wrapper = styled.div`
 display: flex;
 justify-content: center;
-margin-top: 10px;
-padding: 200px;
 `
 
 
@@ -21,12 +17,17 @@ margin: 15px 85px;
 padding: 25px;
 display: flex;
 justify-content: center;
+
 `
 
 
 export const Description = styled.span`
  padding: 25px;
  font-size: 13px;
+@media only screen and (max-width: 1024px) {
+  padding: 15px;
+
+}
 `
 
 
@@ -44,26 +45,27 @@ cursor: pointer;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
 }
-
 @media only screen and (max-width: 1024px) {
-    display: grid;
-grid-template-columns: repeat(2, 350px);
-grid-template-rows: repeat(2, 350px);
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
 grid-gap: 3em;
 }
-
-@media only screen and (max-width: 768x) {
-    display: grid;
-grid-template-columns: 350px;
-grid-template-rows: repeat(4, 350px);
-grid-gap: 3em;
+@media only screen and (max-width: 500px) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3em;
 }
+ 
 `
 
 export const PostTitles = styled.h4`
  font-size: 20px;
  padding: 5px;
- 
+@media only screen and (max-width: 1024px) {
+ font-size: 15px;
+padding: 0;
+font-weight: bold;
+}
 `
 
 export const GridSquare = styled.h4`
@@ -80,6 +82,13 @@ transition: all 0.3s ease;
        color: #000;
        text-decoration: none;
    }
+
+@media only screen and (max-width: 1024px) {
+  height: 320px;
+
+}
+@media only screen and (max-width: 768px) {
+}
 `
 
 export const Tags = styled.h4`

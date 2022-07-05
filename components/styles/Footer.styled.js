@@ -4,9 +4,8 @@ import styled from 'styled-components'
 
 export const FooterSection = styled.footer`
 background: teal;
-position: relative;
-bottom: 0; 
 width: 100%;
+height: 120px;
 border-top: solid 2px black;
 @media only screen and (max-width: 768px) {
 
@@ -18,6 +17,7 @@ export const FooterMenu = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+height: 100%;
 color: #000;
 @media only screen and (max-width: 768px) {
     
@@ -29,7 +29,7 @@ color: #000;
 
 export const Copyright = styled.span`
 margin-left: 100px;
-font-size: 18px;
+font-size: 22px;
 @media only screen and (max-width: 768px) {
 font-size: 16px;
 text-align: center;
@@ -39,9 +39,8 @@ text-align: center;
 
 
 export const SmIcons = styled.div`
- margin: 0 10px;
+ margin: 0 30px;
 padding-top: 8px;
-
  width: 150px;
  .sm-icon {
      margin: 3px;
