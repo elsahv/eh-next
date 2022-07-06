@@ -5,7 +5,12 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
 display: flex;
 justify-content: center;
- 
+@media only screen and (max-width: 768px) {
+  display: flex;
+justify-content: center;
+flex-direction: column;
+width: 10px;
+}
  `
 
 const FormInput = styled.input`
@@ -17,6 +22,9 @@ width: 450px;
 border-radius: 5px;
 margin: 15px;
 font-size: 20px;
+@media only screen and (max-width: 768px) {
+width: 350px;
+}
 `
 
  
@@ -29,13 +37,16 @@ border: solid 2px black;
 border-radius: 5px;
 height: 35px;
 padding: 5px;
-
-span {
-color: teal;
-font-size: 17px;  
- 
-
+  span {
+  color: teal;
+  font-size: 17px;  
  }
+ @media only screen and (max-width: 768px) {
+  width: 100px;
+  display: flex;
+  margin-left: 125px;
+ }
+
 `
 
 //END STYLES
@@ -48,8 +59,6 @@ const SubscribeForm = () =>
   return (
     <div>
         <Wrapper>
-     
-
         <FormInput name="email" placeholder="enter email address"/>
         <Button>
           <span>

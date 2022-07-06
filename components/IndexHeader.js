@@ -70,12 +70,12 @@ const Header = () => {
         </Link>
       </Logo> 
    <NavLinks>
-       <Link href="/">Contact</Link>
+   <Link href="#aboutJump">About</Link>
+       <Link href="#contactJump">Contact</Link>
    <Link href="/blog">Blog</Link>
    <Link href="/featured-websites">Portfolio</Link>
 
        {/* <Link href="/creative-projects">Creative Projects</Link> */}
-
      </NavLinks>
 
       </NavSection>

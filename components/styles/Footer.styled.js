@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 
 export const FooterSection = styled.footer`
-margin-top: 100px;
+margin-top: 170px;
 background: teal;
 width: 100%;
 height: 100px;

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 //STYLES
 const Wrapper = styled.div`
+padding-top: 155px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -10,7 +11,7 @@ flex-direction: column;
 #bars {
   background: aquamarine;
   border: solid 2px black;
-  width: 450px;
+  width: 500px;
   border-radius: 5px;
   margin: 15px;
   font-size: 20px;
@@ -24,6 +25,7 @@ flex-direction: column;
 const Title = styled.h2`
 color: black;
 text-shadow: 1px 1px 1px teal;
+font-size: 40px;
 `
 
 
@@ -44,7 +46,7 @@ cursor: pointer;
 padding: 10px;
 border: solid 2px black;
 border-radius: 5px;
-font-size: 15px;  
+font-size: 20px;  
 `
 
 //END STYLES
@@ -57,7 +59,7 @@ const ContactForm = () =>
   return (
     <div>
         <Wrapper>
-        <Title>Contact Form</Title>
+        <Title>Contact</Title>
         <FormInput id="bars" name="name" placeholder="name"/>
         <FormInput id="bars" name="email" placeholder="email"/>
         <Textarea id="bars" name="message" placeholder="tell me about your project!"/>

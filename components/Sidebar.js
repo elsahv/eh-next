@@ -118,10 +118,10 @@ const showSidebar = () => setSidebar(!sidebar)
 
 
         <NavLinks>
-            <Link href="/">
+            <Link href="/#aboutJump">
                   <a>About</a>
                 </Link>
-                <Link href="/">
+                <Link href="/#contactJump">
                   <a>Contact</a>
                 </Link>
                 <Link href="/blog">

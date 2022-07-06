@@ -11,7 +11,7 @@ z-index: 1;
 position: absolute;
 top: 0;
 width: 100%;
-padding: 15px 0 0 55px;
+padding: 25px 0 0 85px;
 @media only screen and (max-width: 1024px) {
   display: none;
 }
@@ -19,13 +19,14 @@ padding: 15px 0 0 55px;
 
 
 const Logo = styled.div`
-font-size: 25px;
+font-size: 35px;
 display: flex;  
 align-items: center;
 font-weight: 900;
 margin-right: 400px;
 a {
 text-decoration: none;
+color: #000;
 }
 @media only screen and (max-width: 1024px) {
     font-size: 28px;
@@ -37,11 +38,11 @@ text-decoration: none;
 
  
     const NavLinks = styled.div`
-    display:flex;
     color: black;
-    font-size: 20px;
-    margin-left: 130px;
-    margin-top: 33px;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     a {
       color: #000;
         text-decoration: none;
@@ -64,16 +65,16 @@ const Header = () => {
     <Wrapper>
 
    
-      <NavLinks>
       <Logo> 
       <Link href="/">
         Elsa Hovey- Development/ Design
         </Link>
       </Logo> 
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
-       <Link href="/blog">Blog</Link>
+      <NavLinks>
 
+          <Link href="/#aboutJump">About</Link>
+          <Link href="/#contactJump">Contact</Link>
+       <Link href="/blog">Blog</Link>
        {/* <Link href="/creative-projects">Creative Projects</Link> */}
        <Link href="/featured-websites">Portfolio</Link>
 

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 //STYLES
 export const Wrapper = styled.div`
+background: silver;
 position:absolute;
 top: 0;
 z-index: 10000;   
@@ -29,6 +30,7 @@ display: grid;
 export const HomeLeft = styled.div`
 background: #3aa1aa;
 position: fixed;
+border-right: solid 2px black;
   .jt-img {
     grid-area: a;
     border-right: solid 2px black;
@@ -59,6 +61,8 @@ export const HomeRight = styled.div`
   flex-direction: column;
   margin: 0 0 0 10px;
   border-left: solid 2px #000;
+  background: #fff;
+  margin-left: 22px;
 @media only screen and (max-width: 1024px) {
   width: 100%;
   margin: auto;
@@ -260,12 +264,12 @@ h2 {
  
 //*CONTACT SECTION
 export const Contact = styled.div`
-background: #3aa1aa;
+// background: #3aa1aa;
 border-top: solid 2px black;
 border-bottom: solid 2px black;
 text-align: center;
 font-weight: bold;
-height: 600px;
+height: 900px;
 h2 {
   padding: 10px;
 }
