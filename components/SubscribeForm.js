@@ -23,7 +23,7 @@ border-radius: 5px;
 margin: 15px;
 font-size: 20px;
 @media only screen and (max-width: 768px) {
-width: 350px;
+width: 300px;
 }
 `
 

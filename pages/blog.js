@@ -8,14 +8,7 @@ import SubscribeForm from '../components/SubscribeForm'
 
 //STYLES 
  const Wrapper = styled.div`
- margin-bottom: 290px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 20px;
-  ul {
-    margin: 55px;
-  }
+ background: #3aa1aa;
 @media only screen and (max-width: 1024px) {
 }
 @media only screen and (max-width: 768px) {
@@ -23,14 +16,25 @@ import SubscribeForm from '../components/SubscribeForm'
   margin: 55px 0 0 0;
 }
  ` 
- const Title = styled.h2`
- display: flex;
- justify-content: center;
- padding: 20px;
-@media only screen and (max-width: 1024px) {
- 
-}
+//  const Title = styled.div`
+//  display: flex;
+//  justify-content: center;
+//  padding: 60px 0 0 0;
+//  font-size: 35px;
+//  color: #007ba5;
+//  text-decoration: underline;
+// @media only screen and (max-width: 1024px) {
+// }
+// `
+
+const SubscribeTitle = styled.div`
+display: flex;
+justify-content: center;
+padding: 60px 0 0 0;
+font-size: 35px;
+text-decoration: underline;
 `
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -51,10 +55,10 @@ const Grid = styled.div`
 
 `
 const LeftSide = styled.div`
-border-right: solid 2px #000;
+border-right: solid 2px black;
 display: flex;
 justify-content: center;
-padding-top: 70px;
+padding-top: 100px;
 grid-area: a;
 p {
   font-size: 20px;  
@@ -65,7 +69,12 @@ p {
 `
 const RightSide = styled.div`
 grid-area: b;
-padding: 55px;
+padding: 120px 50px 180px;
+`
+
+const Title = styled.h2`
+padding: 25px 0;
+font-size: 30px;
 `
 
 
@@ -90,7 +99,6 @@ font-size: 20px;
 `
 
 const SubscribeWrapper = styled.div`
-border: solid 2px black;
 background: #3aa1aa;
 height: 380px;
 h2 {
@@ -101,7 +109,8 @@ p {
   padding: 20px;
 }
 @media only screen and (max-width: 768px) {
-  }
+margin: 25px;
+}
 `
 //END STYLES
 
@@ -117,19 +126,20 @@ p {
       </Head>
 
        <Wrapper>
-       <Title>Recent Posts</Title>
+       {/* <Title>Blog</Title> */}
      
      <Grid>
       
       <LeftSide>
         <SubscribeWrapper>
-        <Title>Subscribe Form</Title>
+        <SubscribeTitle>Subscribe Form</SubscribeTitle>
         <p>I write about my progress as a web developer, and document my projects.</p>
         <SubscribeForm />
         </SubscribeWrapper>      
         </LeftSide>
 
         <RightSide>
+          <Title>Recent Posts</Title>
           {posts &&
           posts.map((post, index) => (
             // eslint-disable-next-line react/jsx-key

@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 //STYLES
 const Wrapper = styled.div`
-background: #3aa1aa;
-border-bottom: solid 2px black;
+background: #fff;
+display: flex;
 z-index: 1;
 position: absolute;
 top: 0;

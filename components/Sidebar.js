@@ -10,7 +10,7 @@ import styled from 'styled-components'
 
 
  const SidebarWrapper = styled.div`
-background: #3aa1aa;
+background: #fff;
 width: 100%;
 height: 100px;
 display: flex;

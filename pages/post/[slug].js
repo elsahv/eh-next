@@ -7,8 +7,10 @@ import styled from 'styled-components'
 
 //STYLES
 const Wrapper = styled.div`
-margin: 100px;
-padding-top: 25px;
+padding: 75px;
+background: #3aa1aa;
+font-size: 18px;
+
 @media only screen and (max-width: 1024px) {
   margin: 80px 20px;
 }
