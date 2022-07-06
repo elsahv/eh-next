@@ -37,7 +37,7 @@ export const Description = styled.span`
 export const Grid = styled.div`
 padding: 55px;
 display: grid;
-grid-template-columns: repeat(4, 370px);
+grid-template-columns: repeat(3, 370px);
 grid-gap: 3em;
 cursor: pointer;
 .image {
