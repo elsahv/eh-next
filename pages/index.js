@@ -42,8 +42,8 @@ export default function Home({posts}) {
                  className='jt-img'
                  src='/images/joshuatreeabout.png'
                  alt='joshua tree'
-                 width="970"
-                 height="460"
+                 width="1080"
+                 height="520"
                  />
                  </JtImg>
                </HomeLeft>
@@ -57,15 +57,13 @@ export default function Home({posts}) {
               </IntroSection>
 
                 <About>
-                  {/* <PortfolioImg> */}
                 <img
                       className='portfolio-img'
                       src='/images/portfolio-pic.jpg'
                       alt='portfolio pic'
 
                       />
-               {/* </PortfolioImg> */}
-                      {/* JUMP TO MARKER */}
+            
                       
                       <Content>
                        <h2>About</h2>  

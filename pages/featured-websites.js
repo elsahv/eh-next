@@ -37,7 +37,7 @@ export const Description = styled.span`
 export const Grid = styled.div`
 padding: 55px;
 display: grid;
-grid-template-columns: repeat(3, 370px);
+grid-template-columns: repeat(3, 400px);
 grid-gap: 3em;
 cursor: pointer;
 .image {
@@ -61,10 +61,9 @@ grid-gap: 3em;
 
 export const PostTitles = styled.h4`
  font-size: 22px;
- padding: 5px;
+ padding: 10px;
 @media only screen and (max-width: 1024px) {
  font-size: 15px;
-padding: 0;
 font-weight: bold;
 }
 `
@@ -74,7 +73,7 @@ background: teal;
 border: solid 2px black;
 border-radius: 45px;
 text-align: center;
-height: 340px;
+height: 380px;
 transition: all 0.3s ease;
 &:hover{
     transform: rotate(3deg);
@@ -85,7 +84,6 @@ transition: all 0.3s ease;
    }
 
 @media only screen and (max-width: 1024px) {
-  height: 320px;
 
 }
 @media only screen and (max-width: 768px) {
@@ -94,6 +92,11 @@ transition: all 0.3s ease;
 
 export const Tags = styled.h4`
 font-size: 17px;
+padding: 10px;
+@media only screen and (max-width: 768px) {
+font-size: 15px;
+padding: 5px;
+}
 `
 
 

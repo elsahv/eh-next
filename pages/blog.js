@@ -8,7 +8,7 @@ import SubscribeForm from '../components/SubscribeForm'
 
 //STYLES 
  const Wrapper = styled.div`
- margin-bottom: 200px;
+ margin-bottom: 290px;
   display: flex;
   justify-content: center;
   flex-direction: column;
