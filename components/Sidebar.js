@@ -10,7 +10,7 @@ import styled from 'styled-components'
 
 
  const SidebarWrapper = styled.div`
-background: teal;
+background: #3aa1aa;
 width: 100%;
 height: 100px;
 display: flex;
@@ -28,7 +28,8 @@ border: solid 2px black;
   top: 0;
   right: 100%;
   transition: 850ms;
-  background: teal;
+  background: #3aa1aa;
+  border: solid 2px black;
   z-index: 1000;
 }
 .nav-menu.active {
