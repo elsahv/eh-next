@@ -23,8 +23,8 @@ justify-content: center;
 
 
 export const Description = styled.span`
- padding: 27px;
- font-size: 13px;
+ padding: 25px;
+ font-size: 17px;
 @media only screen and (max-width: 1024px) {
   padding: 15px;
 
@@ -60,7 +60,7 @@ grid-gap: 3em;
 `
 
 export const PostTitles = styled.h4`
- font-size: 23px;
+ font-size: 25px;
  padding: 5px;
 @media only screen and (max-width: 1024px) {
  font-size: 15px;
