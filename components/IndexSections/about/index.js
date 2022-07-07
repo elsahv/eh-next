@@ -10,7 +10,12 @@ const about = () => {
   return (
     <>
       <IntroSection id="about"> 
-              <Intro>{"Hi there, I'm Elsa"}</Intro>         
+              <Intro
+                data-aos='fade-right'
+                data-aos-duration='1000'
+                data-aos-once='true'
+                data-aos-anchor-placement='center bottom'
+              >{"Hi there, I'm Elsa"}</Intro>         
               <Headline>{"I'm a web developer based in Joshua Tree, CA. I create niche websites and solutions for small business owners and creatives. "}</Headline>
               </IntroSection>
 

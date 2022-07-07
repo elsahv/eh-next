@@ -1,72 +1,17 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import styled from 'styled-components'
+
+import {
+  Form,
+  Button,
+  FormInput,
+  Title,
+  SuccessState,
+  ErrorState
+} from './subscribeForm.styled.js'
 
 
 
- const Form = styled.form`
-padding-left: 25px;
-padding-top: 40px;
-`
-
-
-  const Button = styled.button`
-  margin-left: 17px;
-  margin-top: 15px;
-    font-size: 17px;
-    padding: .5rem;
-    border: solid 1px #636262;
-    border-radius: 4px;
-    font-weight: bold;
-    background-color: aquamarine;
-    color: teal;
-    cursor: pointer;
-    /* :disabled {
-      background: #636262;
-  color: #cbced0;
-    } */
-    :disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
-`
-
- const FormInput = styled.input`
- margin-left: 17px;
-display: flex;
-justify-content: space-between;
-font-size: 15px;
-display: block;
-width: 300px;
-background-color: #f9fafb;
-padding: 0.5rem; 
-border-radius: 4px;
-border: 1px solid #6a4feb2e;
-font-size: 16px;
-@media only screen and (max-width: 1024px) {
-  width: 200px;
-  font-size: 12px;
-}
-`
-
- const Title = styled.h4`
-  color: aquamarine;
-  margin-bottom: 10px;
-  margin-left: 17px;
-  font-size: 25px;
-`
-
-
-
-  
-
-
- const SuccessState = styled.p`
-  color: aquamarine;
-`
- const ErrorState = styled.p`
-  color: #b00020;
-`
 
 function Subscribe() {
   const [email, setEmail] = useState('')

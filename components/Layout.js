@@ -10,7 +10,7 @@ import Sidebar from './Sidebar'
  
 
 export default function Layout({ children }) {
-  return (
+  return (  
     <>
       <GlobalStyles />
     <Header />

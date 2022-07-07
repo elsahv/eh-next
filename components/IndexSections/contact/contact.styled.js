@@ -31,6 +31,12 @@ a {
 p {
   font-size: 20px;
 }
+@media only screen and (max-width: 500px) {
+  a {
+   font-size: 25px;
+  }
+  
+}
 `
 
 export const Title = styled.h2`  

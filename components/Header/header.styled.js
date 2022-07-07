@@ -1,10 +1,9 @@
-import styled from 'styled-components'
-import Link from 'next/link'
 
+import styled from 'styled-components'
 
 
 //STYLES
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
 border-bottom: solid 2px black;
 background: #fff;
 z-index: 1;
@@ -18,7 +17,7 @@ padding: 45px 0 20px 85px;
 `
 
 
-const Logo = styled.div`
+export const Logo = styled.div`
 font-size: 35px;
 display: flex;  
 align-items: center;
@@ -37,7 +36,7 @@ color: #000;
     `
 
  
-    const NavLinks = styled.div`
+    export const NavLinks = styled.div`
     color: black;
     font-size: 25px;
     margin-left: 70px;
@@ -56,32 +55,3 @@ color: #000;
         display: none;
                 }
 `
-  
-
-// END STYLES
-
-const Header = () => {
-  return (
-    <Wrapper>
-
-   
-      <Logo> 
-      <Link href="/">
-        Elsa Hovey- Development/ Design
-        </Link>
-      </Logo> 
-      <NavLinks>
-
-          <Link href="/#about">About</Link>
-          <Link href="/#contact">Contact</Link>
-       <Link href="/blog">Blog</Link>
-       {/* <Link href="/creative-projects">Creative Projects</Link> */}
-       <Link href="/featured-websites">Featured Websites</Link>
-
-   </NavLinks>
-
-    </Wrapper>
-  )
-}
-
-export default Header
