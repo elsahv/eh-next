@@ -21,7 +21,7 @@ import {
   // PortfolioImg
 } from '../components/styles/IndexGrid.styled'
 import IndexHeader from '../components/IndexHeader'
-import ContactForm from '../components/ContactForm'
+import ContactInfo from '../components/ContactInfo'
   
 
 export default function Home({posts}) {
@@ -51,7 +51,7 @@ export default function Home({posts}) {
                <HomeRight>
                 {/* RECENT PROJECTS
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil esse ipsam iste eos eum excepturi quae odio, itaque sed libero beatae architecto tempora, quas voluptatibus quam officiis maiores deserunt? */}
-               <IntroSection id="aboutJump"> 
+               <IntroSection id="about"> 
               <Intro>{"Hi there, I'm Elsa"}</Intro>         
               <Headline>{"I'm a web developer based in Joshua Tree, CA. I create niche websites and solutions for small business owners and creatives. "}</Headline>
               </IntroSection>
@@ -115,8 +115,8 @@ export default function Home({posts}) {
 
 
                  {/* JUMP TO MARKER */}
-                <Contact id="contactJump">
-                  <ContactForm />
+                <Contact id="contact">
+                  <ContactInfo />
                   </Contact>
 
                 

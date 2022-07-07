@@ -6,7 +6,6 @@ import Link from 'next/link'
 //STYLES
 const Wrapper = styled.div`
 background: #fff;
-display: flex;
 z-index: 1;
 position: absolute;
 top: 0;
@@ -72,8 +71,8 @@ const Header = () => {
       </Logo> 
       <NavLinks>
 
-          <Link href="/#aboutJump">About</Link>
-          <Link href="/#contactJump">Contact</Link>
+          <Link href="/#about">About</Link>
+          <Link href="/#contact">Contact</Link>
        <Link href="/blog">Blog</Link>
        {/* <Link href="/creative-projects">Creative Projects</Link> */}
        <Link href="/featured-websites">Portfolio</Link>
