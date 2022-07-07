@@ -1,27 +1,19 @@
 import Head from 'next/head'
-import Image from 'next/image'
-
 import { sanityClient, urlFor } from "../client"
 import {
   Wrapper,
-  JtImg,
   HomeLeft,
   HomeRight,
-  IntroSection,
-  Intro,
-  Headline,
-  About,
-  Content,
   Skills,
   ToolsTitle,
-  Contact,
   Grid,
   ToolsWrapper,
   SkillsTitle,
 } from '../components/styles/IndexGrid.styled'
-import IndexHeader from '../components/IndexHeader'
-import ContactInfo from '../components/ContactInfo'
-  
+
+import IndexHeader from '../components/sections/indexHeader'
+import ContactInfo from '../components/sections/contact'
+import About from '../components/sections/about'  
 
 export default function Home({posts}) {
   return (
@@ -34,52 +26,31 @@ export default function Home({posts}) {
       </Head>
 
       <Wrapper>
+
         <HomeLeft>
+
           <IndexHeader />
-              <JtImg>
-               <Image
-                 className='jt-img'
-                 src='/images/joshuatreeabout.png'
-                 alt='joshua tree'
-                 width="970"
-                 height="460"
-                 />
-                 </JtImg>
+             
                </HomeLeft>
  
-               <HomeRight>
-               <IntroSection id="about"> 
-              <Intro>{"Hi there, I'm Elsa"}</Intro>         
-              <Headline>{"I'm a web developer based in Joshua Tree, CA. I create niche websites and solutions for small business owners and creatives. "}</Headline>
-              </IntroSection>
 
-                <About>
-                <img
-                      className='portfolio-img'
-                      src='/images/portfolio-pic.jpg'
-                      alt='portfolio pic'
-                      />
-            
-                      
-                      <Content>
-                       <h2>About</h2>  
-                <p> Im currently working as a freelance web developer while building up my own side projects.
-                        I like to keep multiple hobbies and small business projects, and have created websites to keep track of my progress. My curiosity is what keeps me going, along with the desire to help other people with their endeavors.</p>
-                        </Content>
-                </About>
+               <HomeRight>
+                <About />
+
+
 
 
                 <Skills>
                   <SkillsTitle>Skills</SkillsTitle>
                <ul>
-                <h3>- Frontend Web Design</h3> 
+                <h3>Frontend Web Design</h3> 
                           <li>Colorful websites for creative niches and small businesses.</li>
                           <li>Quick and interactive styling</li>
                           <li>Effective SEO</li>
                           </ul> 
 
                 <ul>
-                <h3>- Content Management</h3>  
+                <h3>Content Management</h3>  
                           <li>Currently using Sanity.io for content writing, image management, and backend data storage</li>
                           <li>I work one on one with customers to create the ideal website product</li>
                           <li>In my freetime, I also work and manage my
@@ -87,6 +58,8 @@ export default function Home({posts}) {
                               </li> 
                           </ul>
                 </Skills>
+
+
 
 
                 <ToolsWrapper>
@@ -107,9 +80,8 @@ export default function Home({posts}) {
                       </Grid>
                       </ToolsWrapper>
 
-                <Contact id="contact">
-                  <ContactInfo />
-                  </Contact>
+                  <ContactInfo id="contact" />
+                  
          </HomeRight>
 
          </Wrapper>

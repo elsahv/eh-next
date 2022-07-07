@@ -2,47 +2,19 @@ import {
   FaLinkedin,
   FaInstagram,
   FaGithub
- } from 'react-icons/fa';
-import styled from 'styled-components'
+ } from 'react-icons/fa'; 
 
-//STYLES
-const Wrapper = styled.div`
-display: flex;
-justify-content: center;
-flex-direction: column;
-padding-top: 50px;
-a {
-  font-size: 30px;
-  margin: 20px 10px;
-  color: #007ba5;
-}
-`
-
-const Title = styled.h2`  
-margin: 75px 0 0 0;
-font-size: 30px;
-`
-
-const SmIcons = styled.div`
-font-size: 30px;
-padding: 10px;
-a {
-  color: #000;
-  margin: 5px;
-  &:hover{
-    color: #3aa1aa;
-    transition: 1s;
-  }
-}
-`
-
-
-//END STYLES
-
+ import {
+  Title,
+  Wrapper,
+  SmIcons,
+  ExternalWrapper
+ } from './contact.styled'
 
 const ContactForm = () => {
   return (
     <>
+    <ExternalWrapper>
     <Title>
     Contact Info
     </Title>
@@ -65,6 +37,7 @@ const ContactForm = () => {
             <FaInstagram />
             </a>
             </SmIcons>
+            </ExternalWrapper>
     </>
   )
 }
