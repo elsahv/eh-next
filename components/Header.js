@@ -5,12 +5,13 @@ import Link from 'next/link'
 
 //STYLES
 const Wrapper = styled.div`
+border-bottom: solid 2px black;
 background: #fff;
 z-index: 1;
 position: absolute;
 top: 0;
 width: 100%;
-padding: 25px 0 0 85px;
+padding: 45px 0 20px 85px;
 @media only screen and (max-width: 1024px) {
   display: none;
 }
@@ -39,7 +40,7 @@ color: #000;
     const NavLinks = styled.div`
     color: black;
     font-size: 25px;
-    margin-left: 200px;
+    margin-left: 70px;
     margin-top: 10px;
     margin-bottom: 10px;
     a {
@@ -75,7 +76,7 @@ const Header = () => {
           <Link href="/#contact">Contact</Link>
        <Link href="/blog">Blog</Link>
        {/* <Link href="/creative-projects">Creative Projects</Link> */}
-       <Link href="/featured-websites">Portfolio</Link>
+       <Link href="/featured-websites">Featured Websites</Link>
 
    </NavLinks>
 

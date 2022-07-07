@@ -18,7 +18,6 @@ import {
   Grid,
   ToolsWrapper,
   SkillsTitle,
-  // PortfolioImg
 } from '../components/styles/IndexGrid.styled'
 import IndexHeader from '../components/IndexHeader'
 import ContactInfo from '../components/ContactInfo'
@@ -49,20 +48,16 @@ export default function Home({posts}) {
                </HomeLeft>
  
                <HomeRight>
-                {/* RECENT PROJECTS
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil esse ipsam iste eos eum excepturi quae odio, itaque sed libero beatae architecto tempora, quas voluptatibus quam officiis maiores deserunt? */}
                <IntroSection id="about"> 
               <Intro>{"Hi there, I'm Elsa"}</Intro>         
               <Headline>{"I'm a web developer based in Joshua Tree, CA. I create niche websites and solutions for small business owners and creatives. "}</Headline>
               </IntroSection>
 
                 <About>
-                  {/* <PortfolioImg> */}
                 <img
                       className='portfolio-img'
                       src='/images/portfolio-pic.jpg'
                       alt='portfolio pic'
-
                       />
             
                       
@@ -110,16 +105,11 @@ export default function Home({posts}) {
                         </span>
                         ))}
                       </Grid>
-
                       </ToolsWrapper>
 
-
-                 {/* JUMP TO MARKER */}
                 <Contact id="contact">
                   <ContactInfo />
                   </Contact>
-
-                
          </HomeRight>
 
          </Wrapper>

@@ -36,6 +36,9 @@ text-decoration: underline;
 `
 
 const Grid = styled.div`
+padding-top: 80px;
+padding-bottom: 80px;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;  
@@ -58,18 +61,18 @@ const LeftSide = styled.div`
 border-right: solid 2px black;
 display: flex;
 justify-content: center;
-padding-top: 100px;
+padding-top: 60px;
 grid-area: a;
 p {
   font-size: 20px;  
 }
 @media only screen and (max-width: 1024px) {
-  border: none;
+  border-top: solid 2px black;
 }
 `
 const RightSide = styled.div`
 grid-area: b;
-padding: 120px 50px 180px;
+padding:90px 50px 180px;
 `
 
 const Title = styled.h2`
@@ -99,8 +102,8 @@ font-size: 20px;
 `
 
 const SubscribeWrapper = styled.div`
-background: #3aa1aa;
 height: 380px;
+
 h2 {
   text-align: center;
   padding: 25px;
@@ -132,8 +135,7 @@ margin: 25px;
       
       <LeftSide>
         <SubscribeWrapper>
-        <SubscribeTitle>Subscribe Form</SubscribeTitle>
-        <p>I write about my progress as a web developer, and document my projects.</p>
+        {/* <SubscribeTitle>Subscribe Form</SubscribeTitle> */}
         <SubscribeForm />
         </SubscribeWrapper>      
         </LeftSide>

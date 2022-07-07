@@ -129,7 +129,7 @@ const showSidebar = () => setSidebar(!sidebar)
                   <a>Blog</a>
                 </Link>
                 <Link href="/featured-websites">
-                  <a>Portfolio</a>
+                  <a>Featured Websites</a>
                 </Link>
               </NavLinks>
       </div>

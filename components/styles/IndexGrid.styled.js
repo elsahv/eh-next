@@ -87,7 +87,7 @@ background: #fff;
 
 
 export const Intro = styled.h2`
-  color: #007ba5; 
+  color: #007ba5;
   font-size: 35px;
   text-align: left;
   padding-left: 85px;
@@ -104,7 +104,6 @@ export const Intro = styled.h2`
 `
 
 export const Headline = styled.span`
-       color:  #3aa1aa;
        text-align: center;
        cursor: pointer;
        font-size: 25px;
@@ -129,9 +128,13 @@ export const Headline = styled.span`
 // `
 
 export const About = styled.div`
+
 padding: 55px;
 height: 500px;
 display: flex;
+h2 {
+  // color: #007ba5;
+}
 .portfolio-img {
   border: solid 2px black;
   width: 250px;
@@ -154,12 +157,10 @@ export const Content = styled.div`
 h2 {
   text-align: left;
   margin: 10px 20px;
-  color: #007ba5;
   border-bottom: solid 2px teal;  
 }
 p {
   margin: 15px;
-color: teal;
 font-size: 20px;
 }
 @media only screen and (max-width: 500px) {
@@ -175,6 +176,7 @@ font-size: 20px;
 
 export const SkillsTitle = styled.h2`
 text-align: center;
+font-size: 25px;
 text-decoration: underline;
 @media only screen and (max-width: 500px) {
 }
@@ -183,6 +185,7 @@ text-decoration: underline;
 
 
 export const Skills = styled.div`
+background: aquamarine;
 border-top: solid 2px black;
 border-bottom: solid 2px black;
 padding: 35px;
@@ -212,17 +215,18 @@ li {
 //*TOOLS SECTION
 export const ToolsTitle = styled.h2`
 text-align: center;
-background: silver; 
+font-size: 25px;
+text-decoration: underline; 
 padding: 20px;
 @media only screen and (max-width: 500px) {
 }
 `
 
 export const ToolsWrapper = styled.div`
+background: silver;
 display: flex;
 justify-content: center;
 flex-direction: column;
-background: silver; 
 @media only screen and (max-width: 500px) {
  
 }

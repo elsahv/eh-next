@@ -73,7 +73,7 @@ const Header = () => {
    <Link href="#about">About</Link>
        <Link href="#contact">Contact</Link>
    <Link href="/blog">Blog</Link>
-   <Link href="/featured-websites">Portfolio</Link>
+   <Link href="/featured-websites">Featured Websites</Link>
 
        {/* <Link href="/creative-projects">Creative Projects</Link> */}
      </NavLinks>

@@ -9,17 +9,34 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
 display: flex;
 justify-content: center;
-padding-top: 150px;
+flex-direction: column;
+padding-top: 50px;
 a {
-  font-size: 25px;
+  font-size: 30px;
   margin: 20px 10px;
-  color: #000;
+  color: #007ba5;
 }
 `
 
-const Title = styled.h2`
-margin: 15px;
+const Title = styled.h2`  
+margin: 75px 0 0 0;
+font-size: 30px;
 `
+
+const SmIcons = styled.div`
+font-size: 30px;
+padding: 10px;
+a {
+  color: #000;
+  margin: 5px;
+  &:hover{
+    color: #3aa1aa;
+    transition: 1s;
+  }
+}
+`
+
+
 //END STYLES
 
 
@@ -30,8 +47,13 @@ const ContactForm = () => {
     Contact Info
     </Title>
     <Wrapper>
-        <a href="mailto:elsahovey@gmail.com">email me at: elsahovey@gmail.com</a>
+       <p>I am currently available for work, you can reach me at:</p>
+        <a href="mailto:elsahovey@gmail.com"> elsahovey@gmail.com</a>
+        </Wrapper>
         
+        <p>You can also find me on:</p>
+
+      <SmIcons>
        <a className="sm-icon" href="http://github.com/elsahv"> 
             <FaGithub />
             </a>
@@ -42,7 +64,7 @@ const ContactForm = () => {
       <a className="sm-icon" href="https://www.instagram.com/elsahoveydevdesign/"> 
             <FaInstagram />
             </a>
-            </Wrapper>
+            </SmIcons>
     </>
   )
 }
