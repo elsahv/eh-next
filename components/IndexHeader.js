@@ -70,8 +70,8 @@ const Header = () => {
         </Link>
       </Logo> 
    <NavLinks>
-   <Link href="#aboutJump">About</Link>
-       <Link href="#contactJump">Contact</Link>
+   <Link href="#about">About</Link>
+       <Link href="#contact">Contact</Link>
    <Link href="/blog">Blog</Link>
    <Link href="/featured-websites">Portfolio</Link>
 

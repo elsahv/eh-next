@@ -96,7 +96,7 @@ transition: all 0.3s ease;
 
 export const Tags = styled.h4`
 font-size: 17px;
-padding: 10px;
+padding: 5px;
 @media only screen and (max-width: 768px) {
 font-size: 15px;
 padding: 5px;
