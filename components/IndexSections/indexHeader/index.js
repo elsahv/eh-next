@@ -10,7 +10,7 @@ import {
 
 
   
-  
+
 
 const indexHeader = () => {
   return (
@@ -23,10 +23,11 @@ const indexHeader = () => {
         </Link>
       </Logo> 
    <NavLinks>
-   <Link href="#about">About</Link>
-       <Link href="#contact">Contact</Link>
-   <Link href="/blog">Blog</Link>
-   <Link href="/featured-websites">Featured Websites</Link>
+      <Link href="/">About</Link>
+      <Link href="/#contact">Contact</Link>
+      <Link href="/featured-websites">Featured Websites</Link>
+      <Link href="/blog">Blog</Link>
+
 
        {/* <Link href="/creative-projects">Creative Projects</Link> */}
      </NavLinks>

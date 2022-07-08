@@ -11,7 +11,7 @@ height: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
-border: solid 2px black;    
+ 
 
 .nav-menu {
  background-color: aquamarine;
@@ -49,7 +49,9 @@ z-index: 7500;
 
 export const Logo = styled.div`
 font-size: 30px;
+display: none;
 @media only screen and (max-width: 768px) {
+   display: block;
    font-size: 20px;
    margin: 0;
    padding: 20px;

@@ -4,19 +4,11 @@ import {
   Wrapper,
   HomeLeft,
   HomeRight,
+ 
 } from '../components/styles/IndexGrid.styled'
 import IndexHeader from '../components/IndexSections/indexHeader'
 import styled from 'styled-components'
 
-
- 
-//STYLES
- const SiteWrapper = styled.div`
-display: flex;
-justify-content: center;
-padding: 60px 0;
-// background: #3aa1aa;
-`
 
 
 
@@ -26,16 +18,24 @@ padding: 60px 0;
 @media only screen and (max-width: 1024px) {
   padding: 15px;
   font-size: 12px;
+
 }
 `
 
+const GridTitle = styled.h2`
+display: flex;
+justify-content: center;
+margin: 100px 0 0 400px;
+
+`
 
  
 
- const SiteGrid = styled.div`
- margin-left: 150px;
+ const Grid = styled.div`
+ margin-left: 400px;
+ margin-top: 100px;
 display: grid;
-grid-template-columns: repeat(2, 360px);
+grid-template-columns: 400px;
 grid-gap: 2.5em;
 cursor: pointer;
 .image {
@@ -80,7 +80,9 @@ transition: all 0.3s ease;
        color: #000;
        text-decoration: none;
    }
+
 @media only screen and (max-width: 1024px) {
+
 }
 @media only screen and (max-width: 768px) {
 }
@@ -94,10 +96,9 @@ font-size: 12px;
 padding: 5px;
 }
 `
-//END STYLES
 
 
-export default function Home({posts}) {
+ export default function Home({posts}) {
   return (
     <>
       <Head>
@@ -111,40 +112,45 @@ export default function Home({posts}) {
           <IndexHeader />
              </HomeLeft>
 
-               <HomeRight>
-                <SiteWrapper> 
-                  <SiteGrid>
-                  {posts &&
-                    posts.map((post, index) => (   
-                      <span key={index}>
-                        
-                        <GridSquare>
-                        <a href={post.projectLink} target="_blank" rel="noreferrer">
-                      <PostTitles>{post.title}</PostTitles>
-                        <Description>{post.description}</Description>
-                      <img 
-                          src={urlFor(post.imgUrl)}
-                          alt="main pic"
-                          className="image"
-                          
-                          />
-                        <Tags>-{post.tags}</Tags>
-                        </a>
 
-                      </GridSquare>
-                      </span>
-                      ))}
-                      </SiteGrid>
-                      </SiteWrapper>
-                    </HomeRight>
-                    </Wrapper>
+               <HomeRight>
+                <GridTitle>
+                Featured Websites
+                </GridTitle>
+               <Grid>
+       {posts &&
+        posts.map((post, index) => (   
+          <span key={index}>
+             
+            <GridSquare> 
+            <a href={post.projectLink} target="_blank" rel="noreferrer">
+          <PostTitles>{post.title}</PostTitles>
+            <Description>{post.description}</Description>
+          <img 
+               src={urlFor(post.imgUrl)}
+               alt="main pic"
+               className="image"
+              
+               />
+            <Tags>-{post.tags}</Tags>
+            </a>
+
+          </GridSquare>
+          </span>
+          ))}
+          </Grid>
+             
+                     
+                 
+         </HomeRight>
+         </Wrapper>
     </>
   )
 }
 
 
 export const getServerSideProps = async() => {
-  const query = '*[ _type == "websites"]'
+  const query = '*[ _type == "websites"] | order(_createdAt desc)[0..9]'
   const posts = await sanityClient.fetch(query)
   if (!posts.length) {
     return {

@@ -4,12 +4,10 @@ import createSchema from 'part:@sanity/base/schema-creator'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import websites from './websites'
-import services from './services'
 import about from './about'
 import skills from './skills'
 import blockContent from './blockContent'
 import post from './post'
-import projects from './projects'
 import category from './category'
 
 
@@ -21,12 +19,10 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat(
     [websites,
-     services,
      about,
      skills, 
      blockContent,
      post,
-     projects,
      category,
     /* Your types here! */
   ]),

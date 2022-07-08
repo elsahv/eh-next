@@ -4,8 +4,8 @@ export default {
     type: 'document',
     fields: [
       {
-        name: 'title',
-        title: 'Title',
+        name: 'websiteTitle',
+        title: 'Website Title',
         type: 'string',
       },
     
@@ -25,8 +25,8 @@ export default {
         type: 'string',
       },
       {
-        name: 'imgUrl',
-        title: 'ImageUrl',
+        name: 'websiteImg',
+        title: 'websiteImg',
         type: 'image',
         options: {
           hotspot: true,

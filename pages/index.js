@@ -42,7 +42,7 @@ export default function Home({posts}) {
                               src={urlFor(post.icon)}
                               alt=""
                               />
-                                <h2>{post.name}</h2>
+                                <h2>{post.title}</h2>
                         </span>
                         ))}
                       </Grid>

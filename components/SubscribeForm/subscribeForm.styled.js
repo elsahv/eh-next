@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
 
- 
-
-
  export const Form = styled.form`
-padding-left: 25px;
-padding-top: 40px;
+padding: 50px;
+background: #3aa1aa;
+border: solid 2px black;
+margin: 50px 0;
 `
 
 
@@ -50,7 +49,6 @@ font-size: 16px;
 `
 
  export const Title = styled.h4`
-  color: aquamarine;
   margin-bottom: 10px;
   margin-left: 17px;
   font-size: 25px;
