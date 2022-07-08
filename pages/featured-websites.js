@@ -16,10 +16,21 @@ display: flex;
 justify-content: center;
 margin: 50px 100px;
 @media only screen and (max-width: 1024px) {
-margin: 150px 100px;
 }
 @media only screen and (max-width: 360px) {
-margin: 150px 50px;
+}
+`
+
+const Title = styled.h2`
+font-size: 35px;
+border-bottom: solid 2px black;
+margin: 40px 120px 10px;
+padding: 10px;
+@media only screen and (max-width: 1024px) {
+margin: 100px;
+}
+@media only screen and (max-width: 360px) {
+margin-top: 250px;
 }
 `
 
@@ -117,7 +128,10 @@ export default function Home({posts}) {
              </HomeLeft>
 
                <HomeRight>
+               <Title>Portfolio</Title>
+
                 <SiteWrapper> 
+
                   <SiteGrid>
                   {posts &&
                     posts.map((post, index) => (   

@@ -18,12 +18,14 @@ margin-left: 150px;
 margin-top: 60px;
 @media only screen and (max-width: 1024px) {
   margin-top: 150px;
-  margin-left: 0;
+  margin-left: 20px;
   padding: 10px;
 }
 `
 
 const Title = styled.h2`
+font-size: 35px;
+border-bottom: solid 2px black;
 `
 
   
@@ -33,6 +35,7 @@ const Title = styled.h2`
  text-decoration: underline;
  color: #007ba5;
  cursor: pointer;
+ padding: 10px 0 5px 0;
 `
 
 const Date = styled.div`
@@ -63,7 +66,7 @@ export default function Home({posts}) {
 
                <HomeRight>
                <SubscribeWrapper>
-                <Title>Recent Posts</Title>
+                <Title>Blog</Title>
                  
                    <div>
                    {posts &&
