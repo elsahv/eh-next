@@ -17,7 +17,8 @@ justify-content: center;
 margin: 50px 100px;
 @media only screen and (max-width: 1024px) {
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 500px) {
+  margin: 0;
 }
 `
 
@@ -66,7 +67,7 @@ grid-gap: 3em;
 }
 @media only screen and (max-width: 600px) {
   display: grid;
-  grid-template-columns: 260px;
+  grid-template-columns: 280px;
   grid-gap: 3em;
 }
  

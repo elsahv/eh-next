@@ -59,6 +59,8 @@ export const HomeRight = styled.div`
   margin: auto;
   padding-top: 60px;
 }
+@media only screen and (max-width: 500px) {
+}
 `
 
  
