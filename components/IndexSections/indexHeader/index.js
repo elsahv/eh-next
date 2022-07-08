@@ -25,8 +25,8 @@ const indexHeader = () => {
    <NavLinks>
       <Link href="/">About</Link>
       <Link href="/#contact">Contact</Link>
-      <Link href="/featured-websites">Featured Websites</Link>
       <Link href="/blog">Blog</Link>
+      <Link href="/featured-websites">Portfolio</Link>
 
 
        {/* <Link href="/creative-projects">Creative Projects</Link> */}

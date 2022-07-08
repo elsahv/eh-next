@@ -24,7 +24,7 @@ const Sidebar = () => {
       <Link href="/">About</Link>
       <Link href="/#contact">Contact</Link>
       <Link href="/blog">Blog</Link>
-      <Link href="/featured-websites">Featured Websites</Link>
+      <Link href="/featured-websites">Portfolio</Link>
     </NavLinks>
     </SidebarWrapper>
     </>
