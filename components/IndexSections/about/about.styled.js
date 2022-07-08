@@ -13,6 +13,9 @@ background: #fff;
   margin: auto;
   padding: auto;  
   }
+  @media only screen and (max-width: 500px) {
+  margin-top: 65px;
+  }
 `
 
 

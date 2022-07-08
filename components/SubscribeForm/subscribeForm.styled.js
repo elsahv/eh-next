@@ -6,6 +6,8 @@ padding: 50px;
 background: #3aa1aa;
 border: solid 2px black;
 margin: 50px 0;
+@media only screen and (max-width: 768px) {
+}
 `
 
 

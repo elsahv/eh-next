@@ -16,6 +16,11 @@ import styled from 'styled-components'
 const SubscribeWrapper = styled.div`
 margin-left: 150px;
 margin-top: 60px;
+@media only screen and (max-width: 1024px) {
+  margin-top: 150px;
+  margin-left: 0;
+  padding: 10px;
+}
 `
 
 const Title = styled.h2`

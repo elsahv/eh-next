@@ -14,8 +14,13 @@ import styled from 'styled-components'
  const SiteWrapper = styled.div`
 display: flex;
 justify-content: center;
-padding: 60px 0;
-// background: #3aa1aa;
+margin: 50px 100px;
+@media only screen and (max-width: 1024px) {
+margin: 150px 100px;
+}
+@media only screen and (max-width: 360px) {
+margin: 150px 50px;
+}
 `
 
 
@@ -33,7 +38,6 @@ padding: 60px 0;
  
 
  const SiteGrid = styled.div`
- margin-left: 150px;
 display: grid;
 grid-template-columns: repeat(2, 360px);
 grid-gap: 2.5em;
@@ -54,6 +58,7 @@ grid-gap: 3em;
   grid-template-columns: 260px;
   grid-gap: 3em;
 }
+ 
  
 `
 
