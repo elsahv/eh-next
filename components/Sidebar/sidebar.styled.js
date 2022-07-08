@@ -5,88 +5,53 @@ import styled from 'styled-components'
 
 
 export const SidebarWrapper = styled.div`
-background: #fff;
-width: 100%;
-height: 100px;
-display: flex;
-justify-content: center;
-align-items: center;
- 
-
-.nav-menu {
- background-color: aquamarine;
- width: 100%;
- height: 60vh; 
- display: flex;
- justify-content: flex-start;
- position: fixed;
- top: 0;
- right: 100%;
- transition: 850ms;
- background: #3aa1aa;
- border: solid 2px black;
- z-index: 1000;
-}
-.nav-menu.active {
- right: 0;
- transition: 350ms;
-}
-.navbar-toggle {
- width: 100%;
- height: 80px;
- display: flex;
- justify-content: start;
- align-items: center;
-}
-
-
+text-align: center;
+padding: 20px;
 @media only screen and (max-width: 1024px) {
-position: absolute;
+position: fixed;
 top: 0;
 z-index: 7500;
+background: #3aa1aa;
+border: solid 2px black;
+width: 100%;
+
+
+}
+@media only screen and (max-width: 500px) {
+   height: 130px;
 }
 `
-
+ 
 export const Logo = styled.div`
-font-size: 30px;
-display: none;
-@media only screen and (max-width: 768px) {
-   display: block;
-   font-size: 20px;
-   margin: 0;
-   padding: 20px;
-}
-`
-
-
-export const MenuOpen = styled.div`
-display: none;
-@media only screen and (max-width: 1024px) {
-   display: block;
-   margin: 50px 15px;
-   font-size: 2em;
-   cursor: pointer;
-}
-`   
-
-export const MenuClose = styled.div`
- font-size: 2em;
- margin: 25px;
- cursor: pointer;
-  
-`   
-export const NavLinks = styled.div`
-margin: 25px;
-display: flex;
-justify-content: center;
-flex-direction: column;
-font-size: 25px;  
+font-weight: bold;
+font-size: 25px;
+margin: 5px;
 a {
- color: #fff;
- text-decoration: none;
+   color: #000;
+   text-decoration: none;
 }
-@media only screen and (max-width: 768px) {
-padding-left: 20px;
-margin: auto;
+@media only screen and (max-width: 500px) {
+   font-size: 19px;
 }
-`
+ `
+
+export const NavLinks = styled.div`
+padding-left: 45px;
+font-size: 20px;
+a {
+   color: #000;
+   text-decoration: none;
+   margin: 15px 5px;
+}
+@media only screen and (max-width: 500px) {
+   font-size: 15px;
+
+}
+ `
+
+
+
+
+  
+
+    
