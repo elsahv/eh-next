@@ -143,7 +143,7 @@ export default function Home({posts}) {
                       <PostTitles>{post.title}</PostTitles>
                         <Description>{post.description}</Description>
                       <img 
-                          src={urlFor(post.imgUrl)}
+                          src={urlFor(post.websiteImg)}
                           alt="main pic"
                           className="image"
                           
