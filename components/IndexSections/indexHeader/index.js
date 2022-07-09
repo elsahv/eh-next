@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
 import {
   NavSection,
   Logo,
@@ -16,7 +15,6 @@ const indexHeader = () => {
   return (
     <>
      <NavSection>
-    
      <Logo> 
       <Link href="/">
         Elsa Hovey- Development/ Design
@@ -25,15 +23,9 @@ const indexHeader = () => {
    <NavLinks>
       <Link href="/">About</Link>
       <Link href="/#contact">Contact</Link>
-      <Link href="/featured-websites">Portfolio</Link>
-      <Link href="/blog">Blog</Link>
-
-
-       {/* <Link href="/creative-projects">Creative Projects</Link> */}
+      <Link href="/portfolio">Portfolio</Link>
      </NavLinks>
-
       </NavSection>
-
       <JtImg>
                <Image
                  className='jt-img'
