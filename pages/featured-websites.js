@@ -140,7 +140,7 @@ export default function Home({posts}) {
                         
                         <GridSquare>
                         <a href={post.projectLink} target="_blank" rel="noreferrer">
-                      <PostTitles>{post.title}</PostTitles>
+                      <PostTitles>{post.websiteTitle}</PostTitles>
                         <Description>{post.description}</Description>
                       <img 
                           src={urlFor(post.websiteImg)}
