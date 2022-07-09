@@ -91,7 +91,7 @@ text-align: center;
 height: 360px;
 transition: all 0.3s ease;
 &:hover{
-    transform: rotate(3deg);
+    transform: rotate(1deg);
    }
    a {
        color: #000;
