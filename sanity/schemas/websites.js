@@ -32,7 +32,20 @@ export default {
           hotspot: true,
         },
       },
-   
+      {
+        name:'skillTitle',
+        title:'Skill Title',
+        type:'string'
+    },
+    {
+      name:'skillIcon',
+      title:'Skill Icon',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+  },
+
       {
         name: 'tags',
         title: 'Tags',

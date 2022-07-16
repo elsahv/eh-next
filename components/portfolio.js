@@ -4,8 +4,8 @@ import {
   Wrapper,
   HomeLeft,
   HomeRight,
-} from '../components/styles/IndexGrid.styled'
-import IndexHeader from '../components/IndexSections/indexHeader'
+} from './styles/IndexGrid.styled'
+import IndexHeader from './IndexSections/indexHeader'
 import styled from 'styled-components'
 
 

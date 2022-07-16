@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+    import styled from 'styled-components'
 
 
 //STYLES
@@ -121,19 +121,24 @@ h2 {
 }  
 `
 
+//WEBSITE SECTION
+export const WebsiteSection = styled.div`
+background: pink;
+width: 100%;
+border-top: solid 2px black; 
+`
+export const WebsiteGrid = styled.div`
+ text-align: center;
+ margin: 20px;
  
-//*CONTACT SECTION
-export const Contact = styled.div`
-// background: #3aa1aa;
-border-top: solid 2px black;
-border-bottom: solid 2px black;
-text-align: center;
-font-weight: bold;
-height: 900px;
-h2 {
-  padding: 10px;
-}
 `
 
 
 
+ 
+ 
+
+
+
+
+ 
