@@ -20,6 +20,7 @@ const indexHeader = () => {
         Elsa Hovey- Development/ Design
         </Link>
       </Logo> 
+      
    <NavLinks>
       <Link href="/#about">About</Link>
       <Link href="/#portfolio">Portfolio</Link>

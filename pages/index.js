@@ -1,15 +1,18 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import { sanityClient, urlFor } from "../client"
-
 import {
   Wrapper,
   HomeLeft,
   HomeRight,
-  ToolsTitle,
-  WebsiteSection,
+  PortfolioTitle,
   WebsiteGrid,
+  Website,
+  WebsiteScreenshot,
+  WebsiteTitle,
+  WebsiteDescription,
+  WebsiteTags
 } from '../components/styles/IndexGrid.styled'
-
 import IndexHeader from '../components/IndexSections/indexHeader'
 import ContactInfo from '../components/IndexSections/contact'
 import About from '../components/IndexSections/about'  
@@ -31,31 +34,34 @@ export default function Home({ posts }) {
           <IndexHeader />
              </HomeLeft>
 
+             
                <HomeRight> 
                 <About />
-                <WebsiteSection>
-                <div id="portfolio">
+                <PortfolioTitle id="portfolio">Portfolio</PortfolioTitle>   
+                
+                <WebsiteGrid>
 
-                <ToolsTitle>Portfolio</ToolsTitle>  
-                     </div>
                           {posts &&
                           posts.map((post, index) => (   
                             <span key={index}>
-                           <WebsiteGrid>
-                                    <h2>{post.websiteTitle}</h2>
-                                    <div>{post.description}</div>
+                           <Website>
+                                    <WebsiteTitle>{post.websiteTitle}</WebsiteTitle>
+                                    <WebsiteDescription>{post.description}</WebsiteDescription>
+                                    <WebsiteScreenshot>
                                         <img
-                                        className="img"
+                                        className="website-screenshot"
                                         src={urlFor(post.websiteImg)}
                                         alt=""
-                                        width="250"
+                                        width="400"
                                         height="250"
                                         />
-                                    <div>{post.tags}</div>
-                            </WebsiteGrid>
+                                        </WebsiteScreenshot>
+                                    <WebsiteTags>{post.tags}</WebsiteTags>
+                            </Website>
                               </span>   
                             ))}
-                          </WebsiteSection>
+
+                          </WebsiteGrid>
                           <Services />
                            <Skills /> 
                       <div id="contact">

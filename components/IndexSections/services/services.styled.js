@@ -9,7 +9,11 @@ border-bottom: solid 2px black;
 padding: 35px;
 h3 {
 text-align: left;
+text-decoration: underline;
 font-size: 25px;
+color: teal;
+font-weight: bold;
+
 }
 ul {
    margin: 25px;
@@ -20,8 +24,8 @@ padding-left: 25px;
 li {
   font-size: 20px;
   margin: 5px;
-  color: #007ba5;
-  font-weight: bold;
+  // color: teal;
+  // font-weight: bold;
   margin: 10px 0;
 }
 @media only screen and (max-width: 500px) {

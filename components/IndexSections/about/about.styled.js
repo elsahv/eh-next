@@ -4,17 +4,17 @@ import styled from 'styled-components'
 
 //*INTRO SECTION
 export const IntroSection = styled.div`
+border-top: solid 2px black;
+padding: 70px 40px 0 40px;
  display: flex;
 justify-content: center;
   flex-direction: column;
-padding: 75px 0 0;
-background: #fff;
+
   @media only screen and (max-width: 1024px) {
-  margin: auto;
-  padding: auto;  
+    // padding: auto;
+    margin-top: 20px;
   }
   @media only screen and (max-width: 500px) {
-  margin-top: 65px;
   }
 `
 
@@ -23,7 +23,7 @@ export const Intro = styled.h2`
 color: #007ba5;
 font-size: 35px;
 text-align: left;
-padding-left: 85px;
+
 @media only screen and (max-width: 768px) {
 font-size: 40px;
 margin-top: 25px;
@@ -37,12 +37,11 @@ margin: 0;
 `
 
 export const Headline = styled.span`
-     text-align: center;
      cursor: pointer;
      font-size: 25px;
-     margin: 5px 30px;
+
 @media only screen and (max-width: 1024px) {
-    text-align: center;
+    // text-align: center;
     cursor: pointer;
     font-size: 27px;
     line-height: 1.5em;
@@ -55,18 +54,16 @@ export const Headline = styled.span`
 
 //*ABOUT SECTION
 
-// export const PortfolioImg = styled.div`
-// height: 206px;
-// width: 500px;
-// `
-
 export const About = styled.div`
-
-padding: 55px;
+padding: 40px 20px;
 height: 500px;
 display: flex;
 h2 {
-// color: #007ba5;
+color: #007ba5;
+margin-left: 17px;
+margin-top: 20px;
+margin-bottom: 0; 
+font-size: 25px;
 }
 .portfolio-img {
 border: solid 2px black;
@@ -89,8 +86,8 @@ padding: 0;
 export const Content = styled.div`
 h2 {
 text-align: left;
-margin: 10px 20px;
-border-bottom: solid 2px teal;  
+// margin: 10px 20px;
+// border-bottom: solid 2px teal;  
 }
 p {
 margin: 15px;

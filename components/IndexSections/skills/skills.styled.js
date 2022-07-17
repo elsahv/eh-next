@@ -12,7 +12,7 @@ padding: 20px 110px;
 }
  
 @media only screen and (max-width: 1024px) {
-    padding: 5px 15px;
+    padding: 15px 15px;
 } 
 `
 

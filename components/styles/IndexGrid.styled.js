@@ -1,4 +1,4 @@
-    import styled from 'styled-components'
+import styled from 'styled-components'
 
 
 //STYLES
@@ -54,6 +54,7 @@ export const HomeRight = styled.div`
   border-left: solid 2px #000;
   background: #fff;
   margin-left: 22px;
+  
 @media only screen and (max-width: 1024px) {
   width: 100%;
   margin: auto;
@@ -64,76 +65,70 @@ export const HomeRight = styled.div`
 `
 
  
-
-
-
-
-//*TOOLS SECTION
-export const ToolsTitle = styled.h2`
-text-align: center;
-font-size: 25px;
-text-decoration: underline; 
-padding: 20px;
-@media only screen and (max-width: 500px) {
-}
-`
-
-export const ToolsWrapper = styled.div`
-background: silver;
-display: flex;
-justify-content: center;
-flex-direction: column;
-@media only screen and (max-width: 500px) {
  
-}
-`
-
-export const Grid = styled.div`
- margin: 20px 205px;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-  .img {
-    background: teal;
-    border-radius: 25px;
-    width: 85px;
-    height: 85px;
-}
-h2 {
-  font-size: 15px;
-  padding: 5px;
-  font-size: 15px;
-}
-@media only screen and (max-width: 768px) {
-margin: auto;
-padding: auto;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-  .img {
-    background: teal;
-    border-radius: 25px;
-    width: 55px;
-    height: 55px;
-}
-h2 {
-  padding: 5px;
-  font-size: 10px;
-}
-}  
-`
 
 //WEBSITE SECTION
-export const WebsiteSection = styled.div`
-background: pink;
-width: 100%;
-border-top: solid 2px black; 
-`
 export const WebsiteGrid = styled.div`
- text-align: center;
- margin: 20px;
- 
+display: grid;
+grid-template-columns: 1fr;
+
+@media only screen and (max-width: 1024px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+`
+
+export const PortfolioTitle = styled.h2`
+text-align: center;
+border-top: solid 2px black; 
+color: teal;
+font-size: 30px;
+padding-top: 15px;
+@media only screen and (max-width: 1024px) {
+padding: 25px;
+}
+`
+
+export const WebsiteTitle = styled.h3`
+font-size: 25px;
+padding: 5px;
+`
+
+export const WebsiteDescription = styled.span`
+padding: 15px;
 `
 
 
+export const Website = styled.div`
+background: teal; 
+border-radius: 55px;
+ text-align: center;
+ margin: 50px 250px;
+ border: solid 2px black;
+
+@media only screen and (max-width: 1024px) {
+  margin: 25px;
+}
+ 
+
+
+`
+
+export const WebsiteScreenshot = styled.div`
+  margin: 10px;
+ .website-screenshot {
+  border: solid 2px black;
+ }
+`
+
+
+
+export const WebsiteTags = styled.div`
+ padding-bottom: 10px;
+@media only screen and (max-width: 1024px) {
+font-size: 14px;
+}
+`
 
  
  
