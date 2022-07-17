@@ -1,4 +1,6 @@
-import styled from 'styled-components'
+
+
+  import styled from 'styled-components'
 
 
 //STYLES
@@ -60,7 +62,7 @@ export const HomeRight = styled.div`
   margin: auto;
   padding-top: 60px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 531px) {
 }
 `
 
@@ -76,6 +78,7 @@ grid-template-columns: 1fr;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 @media only screen and (max-width: 531px) {
   display: grid;
 grid-template-columns: 1fr;
@@ -109,29 +112,37 @@ export const Website = styled.div`
 background: teal; 
 border-radius: 55px;
  text-align: center;
- margin: 50px 250px;
+ margin: 50px 280px;
  border: solid 2px black;
 
 @media only screen and (max-width: 1024px) {
-  margin: 25px;
+  margin: 60px; 
 }
- 
-
-
+@media only screen and (max-width: 531px) {
+}
 `
 
 export const WebsiteScreenshot = styled.div`
-  margin: 10px;
+  // margin: 10px;
  .website-screenshot {
   border: solid 2px black;
  }
+@media only screen and (max-width: 1024px) {  
+  
+}
 `
+
+export const ImageScreenshot = styled.div`
+ 
+ 
+`
+
 
 
 
 export const WebsiteTags = styled.div`
  padding-bottom: 10px;
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {      
 font-size: 14px;
 }
 `

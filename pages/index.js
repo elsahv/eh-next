@@ -11,7 +11,8 @@ import {
   WebsiteScreenshot,
   WebsiteTitle,
   WebsiteDescription,
-  WebsiteTags
+  WebsiteTags,
+  ImageScreenshot
 } from '../components/styles/IndexGrid.styled'
 import IndexHeader from '../components/IndexSections/indexHeader'
 import ContactInfo from '../components/IndexSections/contact'
@@ -38,9 +39,7 @@ export default function Home({ posts }) {
                <HomeRight> 
                 <About />
                 <PortfolioTitle id="portfolio">Portfolio</PortfolioTitle>   
-                
                 <WebsiteGrid>
-
                           {posts &&
                           posts.map((post, index) => (   
                             <span key={index}>
@@ -48,6 +47,7 @@ export default function Home({ posts }) {
                                     <WebsiteTitle>{post.websiteTitle}</WebsiteTitle>
                                     <WebsiteDescription>{post.description}</WebsiteDescription>
                                     <WebsiteScreenshot>
+                                      <ImageScreenshot>
                                         <img
                                         className="website-screenshot"
                                         src={urlFor(post.websiteImg)}
@@ -55,12 +55,12 @@ export default function Home({ posts }) {
                                         width="400"
                                         height="250"
                                         />
+                                        </ImageScreenshot>
                                         </WebsiteScreenshot>
                                     <WebsiteTags>{post.tags}</WebsiteTags>
                             </Website>
                               </span>   
                             ))}
-
                           </WebsiteGrid>
                           <Services />
                            <Skills /> 
