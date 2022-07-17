@@ -13,7 +13,6 @@ import {
   PortfolioTitle,
   WebsiteGrid,
   Website,
-  WebsiteScreenshot,
   WebsiteTitle,
   WebsiteDescription,
   WebsiteTags,
@@ -116,7 +115,6 @@ export default function Home({ posts }) {
                            <Website>
                                     <WebsiteTitle>{post.websiteTitle}</WebsiteTitle>
                                     <WebsiteDescription>{post.description}</WebsiteDescription>
-                                    {/* <WebsiteScreenshot> */}
                                       <ImageScreenshot>
                                         <img
                                         className="website-screenshot"
@@ -127,7 +125,6 @@ export default function Home({ posts }) {
                                         layout="fill"
                                         />
                                         </ImageScreenshot>
-                                        {/* </WebsiteScreenshot> */}
                                     <WebsiteTags>{post.tags}</WebsiteTags>
                             </Website>
                               </span>   

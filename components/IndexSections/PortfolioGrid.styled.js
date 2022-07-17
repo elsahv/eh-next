@@ -57,12 +57,6 @@ border-radius: 55px;
 }
 `
 
-// export const WebsiteScreenshot = styled.div`
- 
-// @media only screen and (max-width: 1024px) {  
-  
-// }
-// `
 
 export const ImageScreenshot = styled.div`
 padding: 5px 0;

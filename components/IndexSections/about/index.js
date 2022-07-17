@@ -26,7 +26,9 @@ const about = () => {
                        <h2>About</h2>  
                     </div>
                      <p> Im currently working as a freelance web developer while building up my own side projects.
-                        I like to keep multiple hobbies and small business projects, and have created websites to keep track of my progress. My curiosity is what keeps me going, along with the desire to help other people with their endeavors.</p>
+                        I like to keep multiple hobbies and small business projects, and have created websites to keep track of my progress.
+                        <br /><br />
+                         My curiosity is what keeps me going, along with the desire to help other people with their endeavors.</p>
                         </Content>
                 </About>
     </>
