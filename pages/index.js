@@ -1,10 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import { sanityClient, urlFor } from "../client"
+
+import IndexHeader from '../components/IndexSections/indexHeader'
+import ContactInfo from '../components/IndexSections/contact'
+import About from '../components/IndexSections/about'  
+import Services from '../components/IndexSections/services'  
+import Skills from '../components/IndexSections/skills'
+
 import {
-  Wrapper,
-  HomeLeft,
-  HomeRight,
+  Portfolio,
   PortfolioTitle,
   WebsiteGrid,
   Website,
@@ -13,12 +18,76 @@ import {
   WebsiteDescription,
   WebsiteTags,
   ImageScreenshot
-} from '../components/styles/IndexGrid.styled'
-import IndexHeader from '../components/IndexSections/indexHeader'
-import ContactInfo from '../components/IndexSections/contact'
-import About from '../components/IndexSections/about'  
-import Services from '../components/IndexSections/services'  
-import Skills from '../components/IndexSections/skills'  
+} from '../components/IndexSections/PortfolioGrid.styled'
+
+import styled from 'styled-components'
+
+
+
+
+
+//STYLES
+ const Wrapper = styled.div`
+background: silver;
+position:absolute;
+top: 0;
+z-index: 10000;   
+display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  'a b';
+
+@media only screen and (max-width: 1024px) {
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  // grid-template-rows: 695px;
+  grid-template-areas:
+  'a'
+  'b';
+}
+@media only screen and (max-width: 500px) {
+}
+`
+
+
+ const HomeLeft = styled.div`
+background: #3aa1aa;
+position: fixed;
+border-right: solid 2px black;
+  .jt-img {
+    grid-area: a;
+    border-right: solid 2px black;
+  }
+    @media only screen and (max-width: 1024px) {
+      display: none;
+       
+    }
+    @media only screen and (max-width: 768px) {
+    }
+` 
+
+ const HomeRight = styled.div`
+  grid-area: b;
+  display: flex; 
+  flex-direction: column;
+  margin: 0 0 0 10px;
+  border-left: solid 2px #000;
+  background: #fff;
+  margin-left: 22px;
+  
+@media only screen and (max-width: 1024px) {
+  width: 100%;
+  margin: auto;
+  padding-top: 60px;
+}
+@media only screen and (max-width: 531px) {
+}
+`
+//END STYLES
+
+
 
 
 
@@ -34,10 +103,11 @@ export default function Home({ posts }) {
         <HomeLeft>
           <IndexHeader />
              </HomeLeft>
-
              
                <HomeRight> 
                 <About />
+         
+                 <Portfolio>
                 <PortfolioTitle id="portfolio">Portfolio</PortfolioTitle>   
                 <WebsiteGrid>
                           {posts &&
@@ -46,22 +116,26 @@ export default function Home({ posts }) {
                            <Website>
                                     <WebsiteTitle>{post.websiteTitle}</WebsiteTitle>
                                     <WebsiteDescription>{post.description}</WebsiteDescription>
-                                    <WebsiteScreenshot>
+                                    {/* <WebsiteScreenshot> */}
                                       <ImageScreenshot>
                                         <img
                                         className="website-screenshot"
                                         src={urlFor(post.websiteImg)}
                                         alt=""
-                                        width="400"
-                                        height="250"
+                                        // width="378"
+                                        // height="250"
+                                        layout="fill"
                                         />
                                         </ImageScreenshot>
-                                        </WebsiteScreenshot>
+                                        {/* </WebsiteScreenshot> */}
                                     <WebsiteTags>{post.tags}</WebsiteTags>
                             </Website>
                               </span>   
                             ))}
                           </WebsiteGrid>
+                          </Portfolio>
+
+
                           <Services />
                            <Skills /> 
                       <div id="contact">
