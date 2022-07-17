@@ -76,6 +76,11 @@ grid-template-columns: 1fr;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media only screen and (max-width: 531px) {
+  display: grid;
+grid-template-columns: 1fr;
+}
+
 `
 
 export const PortfolioTitle = styled.h2`
@@ -84,6 +89,7 @@ border-top: solid 2px black;
 color: teal;
 font-size: 30px;
 padding-top: 15px;
+
 @media only screen and (max-width: 1024px) {
 padding: 25px;
 }
