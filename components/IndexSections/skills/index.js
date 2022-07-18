@@ -8,7 +8,7 @@ import {
 
 const skills = () => {
   return (
-    <Wrapper>
+           <Wrapper>
                <Image
                  className='jt-img'
                  src='/images/icons/css.png'

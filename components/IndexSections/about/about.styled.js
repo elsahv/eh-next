@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 //*INTRO SECTION
 export const IntroSection = styled.div`
-// background: pink;
+// background: aquamarine;
 // border-top: solid 2px black;
 padding: 70px 40px 10px 40px;
  display: flex;

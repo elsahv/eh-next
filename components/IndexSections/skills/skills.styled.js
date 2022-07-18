@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 export const Wrapper = styled.div`
-background: orange;
+background: aquamarine;
 display: flex;
 justify-content: space-between;
 border-bottom: solid 2px black;

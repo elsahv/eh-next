@@ -15,6 +15,8 @@ export const PortfolioTitle = styled.h2`
 text-align: center;
 text-decoration: underline;
 padding: 15px 0;
+color: #007ba5;
+
 
 @media only screen and (max-width: 1024px) {
 }
@@ -22,8 +24,7 @@ padding: 15px 0;
 
 export const WebsiteGrid = styled.div`
 display: grid;
-grid-template-columns: 400px 400px
-;
+grid-template-columns: 400px 400px;
 
 @media only screen and (max-width: 531px) {
   display: grid;

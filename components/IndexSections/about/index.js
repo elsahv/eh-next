@@ -11,7 +11,7 @@ const about = () => {
     <>
       <IntroSection id="about"> 
               <Intro>
-              {"Hi there, I'm Elsa"}
+              {"Hi there, I'm Elsa..."}
               </Intro>         
               <Headline>{"I'm a web developer based in Joshua Tree, CA. I create niche websites and solutions for small business owners and creatives. "}</Headline>
               </IntroSection>
