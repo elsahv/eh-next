@@ -51,7 +51,7 @@ export const Headline = styled.span`
 //*ABOUT SECTION
 
 export const About = styled.div`
-padding: 40px 20px;
+padding: 40px 40px;
 display: flex;
 // background: lightgreen;
 
