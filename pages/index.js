@@ -18,7 +18,6 @@ import {
   WebsiteTags,
   ImageScreenshot
 } from '../components/IndexSections/PortfolioGrid.styled'
-
 import styled from 'styled-components'
 
 
@@ -104,7 +103,9 @@ export default function Home({ posts }) {
              </HomeLeft>
              
                <HomeRight> 
-                <About />
+                  <About />
+                  <Services />
+                  <Skills /> 
          
                  <Portfolio>
                 <PortfolioTitle id="portfolio">Portfolio</PortfolioTitle>   
@@ -120,8 +121,6 @@ export default function Home({ posts }) {
                                         className="website-screenshot"
                                         src={urlFor(post.websiteImg)}
                                         alt=""
-                                        // width="378"
-                                        // height="250"
                                         layout="fill"
                                         />
                                         </ImageScreenshot>
@@ -133,8 +132,8 @@ export default function Home({ posts }) {
                           </Portfolio>
 
 
-                          <Services />
-                           <Skills /> 
+                          {/* <Services /> */}
+                           {/* <Skills />  */}
                       <div id="contact">
                   <ContactInfo />
                   </div>

@@ -5,6 +5,8 @@ export const Wrapper = styled.div`
 background: orange;
 display: flex;
 justify-content: space-between;
+border-bottom: solid 2px black;
+border-top: solid 2px black;
 padding: 20px 110px;
 .jt-img {
     background: teal;

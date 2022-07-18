@@ -4,29 +4,29 @@ import styled from 'styled-components'
 
 
 export const Wrapper = styled.div`
-border-top: solid 2px black;
-border-bottom: solid 2px black;
-padding: 35px;
+// background: silver;
+text-align: left;
+margin-right: 2px;
+
 h3 {
-text-align: left;
-text-decoration: underline;
-font-size: 25px;
-color: teal;
+font-size: 20px;
 font-weight: bold;
-
+margin-bottom: 10px;
+padding-left: 20px;
 }
+
 ul {
-   margin: 25px;
-text-align: left;
-padding-left: 25px;
-
+  // background: teal;
+margin: 25px;
+// padding-left: 25px;
+padding-bottom: 15px;
+list-style: none;  
 }
+
 li {
-  font-size: 20px;
-  margin: 5px;
-  // color: teal;
-  // font-weight: bold;
-  margin: 10px 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-left: 15px; 
 }
 @media only screen and (max-width: 500px) {
 } 
@@ -34,9 +34,14 @@ li {
 
 
 export const SkillsTitle = styled.h2`
-text-align: center;
-font-size: 25px;
-text-decoration: underline;
+font-weight: bold;
+border-bottom: solid 2px teal;
+color: #007ba5;
+font-size: 27px;
+margin-left: 30px;
+margin-right: 20px;
+padding-left: 15px;
+
 @media only screen and (max-width: 500px) {
 }
 `

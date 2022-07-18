@@ -7,12 +7,14 @@ export const Portfolio = styled.div`
 display: flex;
 justify-content: center;
 flex-direction: column;
-// background: pink;
 margin: auto;
+padding: 35px;
 `
 
 export const PortfolioTitle = styled.h2`
 text-align: center;
+text-decoration: underline;
+padding: 15px 0;
 
 @media only screen and (max-width: 1024px) {
 }
@@ -32,6 +34,7 @@ grid-template-columns: 350px;
 export const WebsiteTitle = styled.h3`
 font-size: 20px;
 padding-top: 10px;
+
 @media only screen and (max-width: 531px) {
 font-size: 18px;
 }
@@ -43,6 +46,7 @@ padding: 10px 0;
 
 
 export const Website = styled.div`
+cursor: pointer;
 background: teal; 
 height: 380px;
 border-radius: 55px;
@@ -51,7 +55,6 @@ border-radius: 55px;
  border: solid 2px black;
 
 @media only screen and (max-width: 1024px) {
-  // margin: 60px; 
 }
 @media only screen and (max-width: 531px) {
 }
