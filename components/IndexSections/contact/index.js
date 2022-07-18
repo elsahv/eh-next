@@ -21,7 +21,7 @@ const ContactForm = () => {
 
     <CTA>
        <p>I am currently available for work, you can reach me at:</p>
-        <a href="mailto:elsahovey@gmail.com"> elsahovey@gmail.com</a>
+        <a href="mailto:elsahoveydevdesigns@gmail.com"> elsahoveydevdesigns@gmail.com</a>
         </CTA>
         <p>You can also find me on:</p>
       <SmIcons>

@@ -66,12 +66,12 @@ border-right: solid 2px black;
 ` 
 
  const HomeRight = styled.div`
+ background: #fff;
   grid-area: b;
   display: flex; 
   flex-direction: column;
   margin: 0 0 0 10px;
   border-left: solid 2px #000;
-  background: #fff;
   margin-left: 22px;
   
 @media only screen and (max-width: 1024px) {
@@ -79,7 +79,7 @@ border-right: solid 2px black;
   margin: auto;
   padding-top: 60px;
 }
-@media only screen and (max-width: 531px) {
+@media only screen and (max-width: 531px) { 
 }
 `
 //END STYLES

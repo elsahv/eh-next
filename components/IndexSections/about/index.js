@@ -16,7 +16,6 @@ const about = () => {
               <Headline>{"I'm a web developer based in Joshua Tree, CA. I create niche websites and solutions for small business owners and creatives. "}</Headline>
               </IntroSection>
                 <About>
-
                 <img
                       className='portfolio-img'
                       src='/images/portfolio-pic.jpg'

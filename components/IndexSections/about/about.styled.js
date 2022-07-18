@@ -89,7 +89,7 @@ margin-left: 50px;
 
 export const Content = styled.div`
 padding-top: 5px;
-
+// background: pink;
 h2 {
 text-align: left;
 border-bottom: solid 2px teal;  
@@ -103,5 +103,7 @@ font-size: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  p {
+  }
 }
 `
