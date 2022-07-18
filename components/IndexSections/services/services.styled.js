@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 // background: silver;
 text-align: left;
 margin-right: 2px;
+margin-top: 25px;
 
 h3 {
 font-size: 20px;
