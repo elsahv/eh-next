@@ -73,7 +73,9 @@ display: flex;
 flex-direction: column;
 
 h2 {
-  margin-top: 40px;
+  // margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
   
@@ -97,8 +99,9 @@ margin: 10px 15px;
 font-size: 20px;
 }
 
-@media only screen and (max-width: 834px) {
-p {
-}
+@media only screen and (max-width: 531px) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 `

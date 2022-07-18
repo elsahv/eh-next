@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
+import Link from "next/link"
+
 import { sanityClient, urlFor } from "../client"
 
 import IndexHeader from '../components/IndexSections/indexHeader'
@@ -19,8 +21,6 @@ import {
   ImageScreenshot
 } from '../components/IndexSections/PortfolioGrid.styled'
 import styled from 'styled-components'
-
-
 
 
 
@@ -48,7 +48,6 @@ display: grid;
 @media only screen and (max-width: 500px) {
 }
 `
-
 
  const HomeLeft = styled.div`
 background: #3aa1aa;
@@ -87,8 +86,6 @@ border-right: solid 2px black;
 
 
 
-
-
 export default function Home({ posts }) {
   return (
     <>
@@ -113,6 +110,7 @@ export default function Home({ posts }) {
                           {posts &&
                           posts.map((post, index) => (   
                             <span key={index}>
+                           <Link href={post.projectLink}>
                            <Website>
                                     <WebsiteTitle>{post.websiteTitle}</WebsiteTitle>
                                     <WebsiteDescription>{post.description}</WebsiteDescription>
@@ -126,14 +124,11 @@ export default function Home({ posts }) {
                                         </ImageScreenshot>
                                     <WebsiteTags>{post.tags}</WebsiteTags>
                             </Website>
+                            </Link>
                               </span>   
                             ))}
                           </WebsiteGrid>
                           </Portfolio>
-
-
-                          {/* <Services /> */}
-                           {/* <Skills />  */}
                       <div id="contact">
                   <ContactInfo />
                   </div>

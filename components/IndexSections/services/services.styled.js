@@ -44,6 +44,7 @@ margin-right: 20px;
 padding-left: 15px;
 
 @media only screen and (max-width: 500px) {
+  text-align: center;
 }
 `
 
